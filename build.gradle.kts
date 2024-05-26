@@ -3,7 +3,6 @@ import java.net.URI
 // Workaround for issue: https://youtrack.jetbrains.com/issue/KTIJ-19369
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    java apply false
     `maven-publish`
     signing
     alias(libs.plugins.gitonium)
