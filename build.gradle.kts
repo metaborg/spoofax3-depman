@@ -28,7 +28,6 @@ subprojects {
             publications {
                 withType<MavenPublication> {
                     pom {
-                        name.set("Gitonium")
                         description.set(project.description)
                         url.set("https://github.com/metaborg/spoofax3-depman")
                         inceptionYear.set("2024")
