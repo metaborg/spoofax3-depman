@@ -78,16 +78,16 @@ subprojects {
         }
     }
 
-    signing {
-        if (!project.hasProperty("signing.secretKeyRingFile")) {
-            // If no secretKeyRingFile was set, we assume an in-memory key in the SIGNING_KEY environment variable (used in CI)
-            useInMemoryPgpKeys(
-                project.findProperty("signing.keyId") as String? ?: System.getenv("SIGNING_KEY_ID"),
-                System.getenv("SIGNING_KEY"),
-                project.findProperty("signing.password") as String? ?: System.getenv("SIGNING_KEY_PASSWORD"),
-            )
-        }
-    }
+    // signing {
+    //     if (!project.hasProperty("signing.secretKeyRingFile")) {
+    //         // If no secretKeyRingFile was set, we assume an in-memory key in the SIGNING_KEY environment variable (used in CI)
+    //         useInMemoryPgpKeys(
+    //             project.findProperty("signing.keyId") as String? ?: System.getenv("SIGNING_KEY_ID"),
+    //             System.getenv("SIGNING_KEY"),
+    //             project.findProperty("signing.password") as String? ?: System.getenv("SIGNING_KEY_PASSWORD"),
+    //         )
+    //     }
+    // }
 
     val checkNotDirty by tasks.registering {
         doLast {

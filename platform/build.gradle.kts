@@ -47,6 +47,6 @@ publishing {
     }
 }
 
-signing {
-    sign(publishing.publications["mavenPlatform"])
-}
+// signing {
+//     sign(publishing.publications["mavenPlatform"])
+// }

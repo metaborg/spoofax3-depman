@@ -36,6 +36,6 @@ publishing {
     }
 }
 
-signing {
-    sign(publishing.publications["mavenCatalog"])
-}
+// signing {
+//     sign(publishing.publications["mavenCatalog"])
+// }
