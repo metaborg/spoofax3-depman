@@ -63,8 +63,8 @@ subprojects {
                 name = "MetaborgArtifacts"
                 url = if (project.extra["isReleaseVersion"] as Boolean) releasesRepoUrl else snapshotsRepoUrl
                 credentials {
-                    username = project.findProperty("publish.repository.metaborg.artifacts.username") as String? ?: System.getenv("METABORG_USERNAME")
-                    password = project.findProperty("publish.repository.metaborg.artifacts.password") as String? ?: System.getenv("METABORG_PASSWORD")
+                    username = project.findProperty("publish.repository.metaborg.artifacts.username") as String? ?: System.getenv("METABORG_ARTIFACTS_USERNAME")
+                    password = project.findProperty("publish.repository.metaborg.artifacts.password") as String? ?: System.getenv("METABORG_ARTIFACTS_PASSWORD")
                 }
             }
             maven {
