@@ -3,7 +3,7 @@
 [![License][license-badge]][license]
 [![GitHub Release][github-release-badge]][github-release]
 
-This repository contains the two projects for managing Spoofax 3 dependencies.
+This repository contains the projects for managing Spoofax 3 dependencies.
 
 | Artifact                          | Latest Release                                                                |
 | --------------------------------- | ----------------------------------------------------------------------------- |
