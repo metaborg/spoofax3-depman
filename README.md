@@ -3,7 +3,7 @@
 [![License][license-badge]][license]
 [![GitHub Release][github-release-badge]][github-release]
 
-This repository contains the projects for managing Spoofax 3 dependencies.
+This repository contains projects for managing Spoofax 3 dependencies.
 
 | Artifact                          | Latest Release                                                                |
 | --------------------------------- | ----------------------------------------------------------------------------- |
@@ -36,8 +36,8 @@ Unless required by applicable law or agreed to in writing, software distributed 
 [github-release-badge]: https://img.shields.io/github/v/release/metaborg/spoofax3-depman
 [github-release]: https://github.com/metaborg/spoofax3-depman/releases
 
-[platform-maven-badge]: https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fartifacts.metaborg.org%2Fservice%2Flocal%2Frepositories%2Freleases%2Fcontent%2Forg%2Fmetaborg%2Fspoofax3%2Fplatform%2Fmaven-metadata.xml
+[platform-maven-badge]: https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fartifacts.metaborg.org%2Fcontent%2Frepositories%2Freleases%2Forg%2Fmetaborg%2Fspoofax3%2Fplatform%2Fmaven-metadata.xml
 [platform-maven]: https://artifacts.metaborg.org/#nexus-search;gav~org.metaborg.spoofax3~platform~~~
 
-[catalog-maven-badge]: https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fartifacts.metaborg.org%2Fservice%2Flocal%2Frepositories%2Freleases%2Fcontent%2Forg%2Fmetaborg%2Fspoofax3%2Fcatalog%2Fmaven-metadata.xml
+[catalog-maven-badge]: https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fartifacts.metaborg.org%2Fcontent%2Frepositories%2Freleases%2Forg%2Fmetaborg%2Fspoofax3%2Fcatalog%2Fmaven-metadata.xml
 [catalog-maven]: https://artifacts.metaborg.org/#nexus-search;gav~org.metaborg.spoofax3~catalog~~~
