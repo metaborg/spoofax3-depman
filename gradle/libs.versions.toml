@@ -25,6 +25,7 @@ commons-io                      = "2.15.1"                  # https://commons.ap
 # Testing
 junit                           = "5.10.1"                  # https://junit.org/
 junit4                          = "4.13.2"                  # https://junit.org/junit4/
+kotest                          = "5.8.1"                   # https://kotest.io/
 
 
 [plugins]
@@ -95,3 +96,7 @@ commons-io                      = { module = "commons-io:commons-io",           
 junit                           = { module = "org.junit.jupiter:junit-jupiter",                             version.ref = "junit" }
 junit-vintage                   = { module = "org.junit.vintage:junit-vintage-engine",                      version.ref = "junit" }
 junit4                          = { module = "junit:junit",                                                 version.ref = "junit4" }
+kotest                          = { module = "io.kotest:kotest-runner-junit5",                              version.ref = "kotest" }
+kotest-assertions               = { module = "io.kotest:kotest-assertions-core",                            version.ref = "kotest" }
+kotest-datatest                 = { module = "io.kotest:kotest-framework-datatest",                         version.ref = "kotest" }
+kotest-property                 = { module = "io.kotest:kotest-property",                                   version.ref = "kotest" }
