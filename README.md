@@ -13,11 +13,29 @@ This repository contains projects for managing Spoofax 3 dependencies.
 
 
 ## Platform
-The `org.metaborg.spoofax3:platform` package is meant to be used by consumers of Spoofax 3 dependencies. The platform aligns Spoofax 3 dependencies that work together.
+The Spoofax 3 platform specifies the versions of Spoofax dependencies that are known to work together. The `org.metaborg.spoofax3:platform` package is meant to be used by consumers of Spoofax 3 dependencies. To depend on this platform, specify in your `build.gradle.kts`:
+
+```kotlin
+dependencies {
+    implementation(platform("org.metaborg.spoofax3:platform:<version>"))
+}
+```
 
 
 ## Catalog
-The `org.metaborg.spoofax3:catalog` package is meant to be used internally within Spoofax 3 projects, to align the versions of the third-party dependencies that are used.
+The Spoofax 3 catalog specifies the versions of dependencies within the projects that constitute Spoofax 3 itself.
+The `org.metaborg.spoofax3:catalog` package is meant to be used internally within Spoofax 3 projects. To use this catalog, specify in your `settings.gradle.kts`:
+
+```kotlin
+dependencyResolutionManagement {
+    versionCatalogs {
+        create("libs") {
+            from("org.metaborg.spoofax3:catalog")
+        }
+    }
+}
+```
+
 
 
 ## License
