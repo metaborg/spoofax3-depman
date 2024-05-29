@@ -1,4 +1,4 @@
-rootProject.name = "depman"
+rootProject.name = "spoofax3-depman"
 
 pluginManagement {
     repositories {
