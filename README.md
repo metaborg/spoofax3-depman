@@ -28,9 +28,12 @@ The `org.metaborg.spoofax3:catalog` package is meant to be used internally withi
 
 ```kotlin
 dependencyResolutionManagement {
+    repositories {
+        maven("https://artifacts.metaborg.org/content/groups/public/")
+    }
     versionCatalogs {
         create("libs") {
-            from("org.metaborg.spoofax3:catalog")
+            from("org.metaborg.spoofax3:catalog:<version>")
         }
     }
 }
