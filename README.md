@@ -16,6 +16,10 @@ This repository contains projects for managing Spoofax 3 dependencies.
 The Spoofax 3 platform specifies the versions of Spoofax dependencies that are known to work together. The `org.metaborg.spoofax3:platform` package is meant to be used by consumers of Spoofax 3 dependencies. To depend on this platform, specify in your `build.gradle.kts`:
 
 ```kotlin
+repositories {
+    maven("https://artifacts.metaborg.org/content/groups/public/")
+}
+
 dependencies {
     implementation(platform("org.metaborg.spoofax3:platform:<version>"))
 }
