@@ -1,30 +1,30 @@
 [versions]
 # Plugins
-kotlin                          = "1.8.20"          # https://kotlinlang.org/
-gitonium                        = "1.2.0"           # https://github.com/metaborg/gitonium
+kotlin                          = "1.8.20"                  # https://kotlinlang.org/
+gitonium                        = "1.2.0"                   # https://github.com/metaborg/gitonium
 # Spoofax 3
-spoofax3                        = "0.0.0"           # https://spoofax.dev/spoofax-pie/develop/ (https://github.com/metaborg/spoofax-pie)
+spoofax3                        = "0.0.0"                   # https://spoofax.dev/spoofax-pie/develop/ (https://github.com/metaborg/spoofax-pie)
 spoofax3-resource               = "0.14.1"
 spoofax3-common                 = "0.11.0"
 spoofax3-pie                    = "0.21.0"
-spoofax2                        = "2.6.0-SNAPSHOT"  # https://spoofax.dev/ (https://github.com/metaborg/spoofax-releng)
+spoofax2                        = "2.6.0-SNAPSHOT"          # https://spoofax.dev/ (https://github.com/metaborg/spoofax-releng)
 # Collections
-capsule                         = "0.6.3"           # https://usethesource.io/projects/capsule/ (https://github.com/usethesource/capsule)
+capsule                         = "0.6.3"                   # https://usethesource.io/projects/capsule/ (https://github.com/usethesource/capsule)
 # Dependency Injection
-guice                           = "5.1.0"           # https://github.com/google/guice
+guice                           = "5.1.0"                   # https://github.com/google/guice
 # Annotations & Annotation Processors
-immutables                      = "2.8.8"           # https://immutables.github.io/ (https://github.com/immutables/immutables)
-jakarta-annotation              = "2.1.1"           # https://github.com/jakartaee/common-annotations-api
-jakarta-inject                  = "2.0.1"           # https://github.com/jakartaee/inject
-javax-inject                    = "1"               # https://github.com/javaee/javax.annotation
+immutables                      = "2.8.8"                   # https://immutables.github.io/ (https://github.com/immutables/immutables)
+jakarta-annotation              = "2.1.1"                   # https://github.com/jakartaee/common-annotations-api
+jakarta-inject                  = "2.0.1"                   # https://github.com/jakartaee/inject
+javax-inject                    = "1"                       # https://github.com/javaee/javax.annotation
 # Logging
-logback                         = "1.4.14"          # https://logback.qos.ch/ (https://github.com/qos-ch/logback)
+logback                         = "1.4.14"                  # https://logback.qos.ch/ (https://github.com/qos-ch/logback)
 # Utils
-commons-math3                   = "3.6.1"           # https://commons.apache.org/proper/commons-math/ (https://github.com/apache/commons-math)
-commons-io                      = "2.15.1"          # https://commons.apache.org/proper/commons-io/ (https://github.com/apache/commons-io)
+commons-math3                   = "3.6.1"                   # https://commons.apache.org/proper/commons-math/ (https://github.com/apache/commons-math)
+commons-io                      = "2.15.1"                  # https://commons.apache.org/proper/commons-io/ (https://github.com/apache/commons-io)
 # Testing
-junit                           = "5.10.1"          # https://junit.org/
-junit4                          = "4.13.2"          # https://junit.org/junit4/
+junit                           = "5.10.1"                  # https://junit.org/
+junit4                          = "4.13.2"                  # https://junit.org/junit4/
 
 
 [plugins]
