@@ -13,7 +13,7 @@ capsule                         = "0.6.3"                   # https://usethesour
 # Dependency Injection
 guice                           = "5.1.0"                   # https://github.com/google/guice
 # Annotations & Annotation Processors
-immutables                      = "2.8.8"                   # https://immutables.github.io/ (https://github.com/immutables/immutables)
+immutables                      = "2.10.1"                  # https://immutables.github.io/ (https://github.com/immutables/immutables)
 jakarta-annotation              = "2.1.1"                   # https://github.com/jakartaee/common-annotations-api
 jakarta-inject                  = "2.0.1"                   # https://github.com/jakartaee/inject
 javax-inject                    = "1"                       # https://github.com/javaee/javax.annotation
