@@ -5,15 +5,16 @@ gitonium                        = "1.2.0"                   # https://github.com
 spoofax-gradle-config           = "0.5.6"                   # https://github.com/metaborg/gradle.config
 # Spoofax 3
 spoofax3                        = "0.0.0"                   # https://spoofax.dev/spoofax-pie/develop/ (https://github.com/metaborg/spoofax-pie)
-spoofax3-resource               = "0.14.1"
-spoofax3-common                 = "0.11.0"
-spoofax3-pie                    = "0.21.0"
+spoofax3-resource               = "0.14.1"                  # https://github.com/metaborg/resource
+spoofax3-common                 = "0.11.0"                  # https://github.com/metaborg/common/
 spoofax3-log                    = "0.5.5"                   # https://github.com/metaborg/log/
+spoofax3-pie                    = "0.21.0"                  # https://github.com/metaborg/pie/
 spoofax2                        = "2.6.0-SNAPSHOT"          # https://spoofax.dev/ (https://github.com/metaborg/spoofax-releng)
 # Collections
 capsule                         = "0.6.3"                   # https://usethesource.io/projects/capsule/ (https://github.com/usethesource/capsule)
 # Dependency Injection
 guice                           = "5.1.0"                   # https://github.com/google/guice
+dagger                          = "2.25.2"                  # https://github.com/google/dagger
 # Annotations & Annotation Processors
 immutables                      = "2.10.1"                  # https://immutables.github.io/ (https://github.com/immutables/immutables)
 derive4j                        = "1.1.1"                   # https://github.com/derive4j/derive4j
@@ -94,6 +95,8 @@ capsule                         = { module = "io.usethesource:capsule",         
 
 # Dependency Injection
 guice                           = { module = "com.google.inject:guice",                                     version.ref = "guice" }
+dagger                          = { module = "com.google.dagger:dagger",                                    version.ref = "dagger" }
+dagger-compiler                 = { module = "com.google.dagger:dagger-compiler",                           version.ref = "dagger" }
 
 # Annotations & Annotation Processing
 immutables-value                = { module = "org.immutables:value",                                        version.ref = "immutables" }
