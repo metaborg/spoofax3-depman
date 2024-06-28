@@ -15,6 +15,7 @@ capsule                         = "0.6.3"                   # https://usethesour
 guice                           = "5.1.0"                   # https://github.com/google/guice
 # Annotations & Annotation Processors
 immutables                      = "2.10.1"                  # https://immutables.github.io/ (https://github.com/immutables/immutables)
+derive4j                        = "1.1.1"                   # https://github.com/derive4j/derive4j
 jakarta-annotation              = "2.1.1"                   # https://github.com/jakartaee/common-annotations-api
 jakarta-inject                  = "2.0.1"                   # https://github.com/jakartaee/inject
 javax-inject                    = "1"                       # https://github.com/javaee/javax.annotation
@@ -92,6 +93,8 @@ guice                           = { module = "com.google.inject:guice",         
 # Annotations & Annotation Processing
 immutables-value                = { module = "org.immutables:value",                                        version.ref = "immutables" }
 immutables-serial               = { module = "org.immutables:serial",                                       version.ref = "immutables" }
+derive4j                        = { module = "org.derive4j:derive4j",                                       version.ref = "derive4j" }
+derive4j-annotation             = { module = "org.derive4j:derive4j-annotation",                            version.ref = "derive4j" }
 jakarta-annotation              = { module = "jakarta.annotation:jakarta.annotation-api",                   version.ref = "jakarta-annotation" }
 jakarta-inject                  = { module = "jakarta.inject:jakarta.inject-api",                           version.ref = "jakarta-inject" }
 javax-inject                    = { module = "javax.inject:javax.inject",                                   version.ref = "javax-inject" }
