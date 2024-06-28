@@ -60,7 +60,9 @@ spoofax3-resource               = { module = "org.metaborg:resource",           
 spoofax3-common                 = { module = "org.metaborg:common",                                         version.ref = "spoofax3-common" }
 spoofax3-log-api                = { module = "org.metaborg:log.api",                                        version.ref = "spoofax3-log" }
 spoofax3-log-backend-slf4j      = { module = "org.metaborg:log.backend.slf4j",                              version.ref = "spoofax3-log" }
+spoofax3-pie-api                = { module = "org.metaborg:pie.api",                                        version.ref = "spoofax3-pie" }
 spoofax3-pie-runtime            = { module = "org.metaborg:pie.runtime",                                    version.ref = "spoofax3-pie" }
+spoofax3-pie-dagger             = { module = "org.metaborg:pie.dagger",                                     version.ref = "spoofax3-pie" }
 
 # Spoofax 2
 spoofax2-metaborg-util          = { module = "org.metaborg:org.metaborg.util",                              version.ref = "spoofax2" }
