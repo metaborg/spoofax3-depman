@@ -8,6 +8,7 @@ spoofax3                        = "0.0.0"                   # https://spoofax.de
 spoofax3-resource               = "0.14.1"
 spoofax3-common                 = "0.11.0"
 spoofax3-pie                    = "0.21.0"
+spoofax3-log                    = "0.5.5"                   # https://github.com/metaborg/log/
 spoofax2                        = "2.6.0-SNAPSHOT"          # https://spoofax.dev/ (https://github.com/metaborg/spoofax-releng)
 # Collections
 capsule                         = "0.6.3"                   # https://usethesource.io/projects/capsule/ (https://github.com/usethesource/capsule)
@@ -55,6 +56,8 @@ spoofax-gradle-junit-testing        = { id = "org.metaborg.gradle.config.junit-t
 spoofax3-bom                    = { module = "org.metaborg.spoofax3:platform",                              version.ref = "spoofax3" }
 spoofax3-resource               = { module = "org.metaborg:resource",                                       version.ref = "spoofax3-resource" }
 spoofax3-common                 = { module = "org.metaborg:common",                                         version.ref = "spoofax3-common" }
+spoofax3-log-api                = { module = "org.metaborg:log.api",                                        version.ref = "spoofax3-log" }
+spoofax3-log-backend-slf4j      = { module = "org.metaborg:log.backend.slf4j",                              version.ref = "spoofax3-log" }
 spoofax3-pie-runtime            = { module = "org.metaborg:pie.runtime",                                    version.ref = "spoofax3-pie" }
 
 # Spoofax 2
