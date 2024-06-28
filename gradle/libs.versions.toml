@@ -2,6 +2,7 @@
 # Plugins
 kotlin                          = "1.8.20"                  # https://kotlinlang.org/
 gitonium                        = "1.2.0"                   # https://github.com/metaborg/gitonium
+spoofax-gradle-config           = "0.5.6"                   # https://github.com/metaborg/gradle.config
 # Spoofax 3
 spoofax3                        = "0.0.0"                   # https://spoofax.dev/spoofax-pie/develop/ (https://github.com/metaborg/spoofax-pie)
 spoofax3-resource               = "0.14.1"
@@ -31,6 +32,16 @@ kotest                          = "5.8.1"                   # https://kotest.io/
 [plugins]
 kotlin-jvm                      = { id = "org.jetbrains.kotlin.jvm",                                        version.ref = "kotlin" }
 gitonium                        = { id = "org.metaborg.gitonium",                                           version.ref = "gitonium" }
+spoofax-gradle-rootproject      = { id = "org.metaborg.gradle.config.root-project",                         version.ref = "spoofax-gradle-config" }
+spoofax-gradle-subproject       = { id = "org.metaborg.gradle.config.sub-project",                          version.ref = "spoofax-gradle-config" }
+spoofax-gradle-java-library         = { id = "org.metaborg.gradle.config.java-library",                     version.ref = "spoofax-gradle-config" }
+spoofax-gradle-java-application     = { id = "org.metaborg.gradle.config.java-application",                 version.ref = "spoofax-gradle-config" }
+spoofax-gradle-java-gradleplugin    = { id = "org.metaborg.gradle.config.java-gradle-plugin",               version.ref = "spoofax-gradle-config" }
+spoofax-gradle-kotlin-library       = { id = "org.metaborg.gradle.config.kotlin-library",                   version.ref = "spoofax-gradle-config" }
+spoofax-gradle-kotlin-application   = { id = "org.metaborg.gradle.config.kotlin-application",               version.ref = "spoofax-gradle-config" }
+spoofax-gradle-kotlin-testingonly   = { id = "org.metaborg.gradle.config.kotlin-testing-only",              version.ref = "spoofax-gradle-config" }
+spoofax-gradle-kotlin-gradleplugin  = { id = "org.metaborg.gradle.config.kotlin-gradle-plugin",             version.ref = "spoofax-gradle-config" }
+spoofax-gradle-junit-testing        = { id = "org.metaborg.gradle.config.junit-testing",                    version.ref = "spoofax-gradle-config" }
 
 
 [libraries]
