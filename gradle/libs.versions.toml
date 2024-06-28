@@ -29,6 +29,7 @@ checkerframework                = "3.16.0"                  # https://checkerfra
 junit                           = "5.10.1"                  # https://junit.org/
 junit4                          = "4.13.2"                  # https://junit.org/junit4/
 kotest                          = "5.8.1"                   # https://kotest.io/
+equalsverifier                  = "3.16.1"                  # https://jqno.nl/equalsverifier/ (https://github.com/jqno/equalsverifier)
 
 
 [plugins]
@@ -116,3 +117,4 @@ kotest                          = { module = "io.kotest:kotest-runner-junit5",  
 kotest-assertions               = { module = "io.kotest:kotest-assertions-core",                            version.ref = "kotest" }
 kotest-datatest                 = { module = "io.kotest:kotest-framework-datatest",                         version.ref = "kotest" }
 kotest-property                 = { module = "io.kotest:kotest-property",                                   version.ref = "kotest" }
+equalsverifier                  = { module = "nl.jqno.equalsverifier:equalsverifier",                       version.ref = "equalsverifier" }
