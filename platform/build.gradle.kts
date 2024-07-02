@@ -31,6 +31,15 @@ dependencies {
         api(libs.spoofax2.meta.lib.analysis)
         api(libs.spoofax2.strategoxt.strj)
         api(libs.spoofax2.jsglr.shared)
+        api(libs.spoofax2.jsglr2)
+        api(libs.spoofax2.nabl2.terms)
+        api(libs.spoofax2.nabl2.solver)
+        api(libs.spoofax2.statix.solver)
+        api(libs.spoofax2.sdf2table)
+        api(libs.spoofax2.renaming.java)
+        api(libs.spoofax2.interpreter.library.index)
+        api(libs.spoofax2.flowspec.runtime)
+        api(libs.spoofax2.runtime.task)
 
         // Spoofax languages
         api(libs.spoofax.lang.esv)

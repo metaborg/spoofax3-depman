@@ -99,6 +99,15 @@ spoofax2-meta-lib-spoofax       = { module = "org.metaborg:meta.lib.spoofax",   
 spoofax2-meta-lib-analysis      = { module = "org.metaborg:org.metaborg.meta.lib.analysis",                 version.ref = "spoofax2" }
 spoofax2-strategoxt-strj        = { module = "org.metaborg:org.strategoxt.strj",                            version.ref = "spoofax2" }
 spoofax2-jsglr-shared           = { module = "org.metaborg:jsglr.shared",                                   version.ref = "spoofax2" }
+spoofax2-jsglr2                 = { module = "org.metaborg:org.spoofax.jsglr2",                             version.ref = "spoofax2" }
+spoofax2-nabl2-terms            = { module = "org.metaborg:nabl2.terms",                                    version.ref = "spoofax2" }
+spoofax2-nabl2-solver           = { module = "org.metaborg:nabl2.solver",                                   version.ref = "spoofax2" }
+spoofax2-statix-solver          = { module = "org.metaborg:statix.solver",                                  version.ref = "spoofax2" }
+spoofax2-sdf2table              = { module = "org.metaborg:sdf2table",                                      version.ref = "spoofax2" }
+spoofax2-renaming-java          = { module = "org.metaborg:renaming.java",                                  version.ref = "spoofax2" }
+spoofax2-interpreter-library-index  = { module = "org.metaborg:interpreter.library.index",                  version.ref = "spoofax2" }
+spoofax2-flowspec-runtime       = { module = "org.metaborg:flowspec.runtime",                               version.ref = "spoofax2" }
+spoofax2-runtime-task           = { module = "org.metaborg:org.metaborg.runtime.task",                      version.ref = "spoofax2" }
 
 # Spoofax languages
 spoofax-lang-esv                = { module = "org.metaborg:org.metaborg.meta.lang.esv",                     version.ref = "spoofax2" }
