@@ -2,7 +2,7 @@
 # Plugins
 kotlin                          = "1.8.20"                  # https://kotlinlang.org/
 gitonium                        = "1.2.0"                   # https://github.com/metaborg/gitonium
-spoofax-gradle-config           = "0.5.6"                   # https://github.com/metaborg/gradle.config
+spoofax-gradle-config           = "0.6.0"                   # https://github.com/metaborg/gradle.config
 # Spoofax 3
 spoofax3                        = "0.0.0"                   # https://spoofax.dev/spoofax-pie/develop/ (https://github.com/metaborg/spoofax-pie)
 spoofax3-resource               = "0.14.1"                  # https://github.com/metaborg/resource
