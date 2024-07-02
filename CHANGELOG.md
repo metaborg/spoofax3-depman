@@ -2,6 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 
+## [0.2.4] - 2024-07-02
+- Rename `spoofax.gradle.*` to `metaborg.gradle.*`
 ## [0.2.3] - 2024-07-02
 - Update `org.metaborg.gradle.config` version `0.6.0`
 
