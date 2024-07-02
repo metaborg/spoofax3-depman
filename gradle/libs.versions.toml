@@ -31,10 +31,19 @@ bnd                             = "5.3.0"                   # https://bnd.bndtoo
 # Logging
 slf4j                           = "1.7.30"                  # https://www.slf4j.org/ (https://github.com/qos-ch/slf4j)
 logback                         = "1.4.14"                  # https://logback.qos.ch/ (https://github.com/qos-ch/logback)
+# Data Formats
+jackson                         = "2.17.1"                  # https://github.com/FasterXML/jackson
+commons-configuration2-jackson  = "1.3.5"                   # https://github.com/Virtlink/commons-configuration2-jackson/
 # Utils
 commons-math3                   = "3.6.1"                   # https://commons.apache.org/proper/commons-math/ (https://github.com/apache/commons-math)
 commons-io                      = "2.15.1"                  # https://commons.apache.org/proper/commons-io/ (https://github.com/apache/commons-io)
 commons-compress                = "1.18"                    # https://commons.apache.org/proper/commons-compress/ (https://github.com/apache/commons-compress)
+commons-vfs2                    = "2.6.0"                   # https://commons.apache.org/proper/commons-vfs/ (https://github.com/apache/commons-vfs)
+commons-lang3                   = "3.4"                     # https://commons.apache.org/proper/commons-lang/ (https://github.com/apache/commons-lang)
+commons-configuration2          = "2.10.1"                  # https://commons.apache.org/proper/commons-configuration/ (https://github.com/apache/commons-configuration)
+guava                           = "31.1-jre"                # https://github.com/google/guava
+failureaccess                   = "1.0.1"                   # https://github.com/google/guava
+rxjava                          = "3.0.2"                   # https://github.com/ReactiveX/RxJava?tab=readme-ov-file
 # Testing
 junit                           = "5.10.1"                  # https://junit.org/
 junit4                          = "4.13.2"                  # https://junit.org/junit4/
@@ -80,6 +89,7 @@ spoofax3-pie-dagger             = { module = "org.metaborg:pie.dagger",         
 
 # Spoofax 2
 spoofax2-metaborg-util          = { module = "org.metaborg:org.metaborg.util",                              version.ref = "spoofax2" }
+spoofax2-util-vfs2              = { module = "org.metaborg:util-vfs2",                                      version.ref = "spoofax2" }
 spoofax2-terms                  = { module = "org.metaborg:org.spoofax.terms",                              version.ref = "spoofax2" }
 spoofax2-interpreter-core       = { module = "org.metaborg:org.spoofax.interpreter.core",                   version.ref = "spoofax2" }
 spoofax2-core                   = { module = "org.metaborg:org.metaborg.spoofax.core",                      version.ref = "spoofax2" }
@@ -135,12 +145,28 @@ bnd-gradle                      = { module = "biz.aQute.bnd:biz.aQute.bnd.gradle
 
 # Logging
 slf4j-simple                    = { module = "org.slf4j:slf4j-simple",                                      version.ref = "slf4j" }
+slf4j-api                       = { module = "org.slf4j:slf4j-api",                                         version.ref = "slf4j" }
+jcl-over-slf4j                  = { module = "org.slf4j:jcl-over-slf4j",                                    version.ref = "slf4j" }
+logback-core                    = { module = "ch.qos.logback:logback-core",                                 version.ref = "logback" }
 logback                         = { module = "ch.qos.logback:logback-classic",                              version.ref = "logback" }
+
+# Data Formats
+commons-configuration2-jackson  = { module = "com.virtlink.commons:commons-configuration2-jackson",         version.ref = "commons-configuration2-jackson" }
+jackson-core                    = { module = "com.fasterxml.jackson.core:jackson-core",                     version.ref = "jackson" }
+jackson-databind                = { module = "com.fasterxml.jackson.core:jackson-databind",                 version.ref = "jackson" }
+jackson-annotations             = { module = "com.fasterxml.jackson.core:jackson-annotations",              version.ref = "jackson" }
+jackson-dataformat-yaml         = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml",    version.ref = "jackson" }
 
 # Utils
 commons-math3                   = { module = "org.apache.commons:commons-math3",                            version.ref = "commons-math3" }
 commons-io                      = { module = "commons-io:commons-io",                                       version.ref = "commons-io" }
 commons-compress                = { module = "org.apache.commons:commons-compress",                         version.ref = "commons-compress" }
+commons-vfs2                    = { module = "org.apache.commons:commons-vfs2",                             version.ref = "commons-vfs2" }
+commons-lang3                   = { module = "org.apache.commons:commons-lang3",                            version.ref = "commons-lang3" }
+commons-configuration2          = { module = "org.apache.commons:commons-configuration2",                   version.ref = "commons-configuration2" }
+guava                           = { module = "com.google.guava:guava",                                      version.ref = "guava" }
+failureaccess                   = { module = "com.google.guava:failureaccess",                              version.ref = "failureaccess" }
+rxjava                          = { module = "io.reactivex.rxjava3:rxjava",                                 version.ref = "rxjava" }
 
 # Testing
 junit                           = { module = "org.junit.jupiter:junit-jupiter",                             version.ref = "junit" }

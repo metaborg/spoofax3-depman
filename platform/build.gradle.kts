@@ -21,6 +21,7 @@ dependencies {
 
         // Spoofax 2
         api(libs.spoofax2.metaborg.util)
+        api(libs.spoofax2.util.vfs2)
         api(libs.spoofax2.terms)
         api(libs.spoofax2.interpreter.core)
         api(libs.spoofax2.core)
