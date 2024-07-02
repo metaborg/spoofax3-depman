@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 
+## [0.3.3] - 2024-07-03
+- Add more Spoofax 2 dependenciies.
+
+
 ## [0.3.2] - 2024-07-03
 - Fix broken dependency `org.metaborg:org.spoofax.interpreter.library.index`.
 
@@ -67,7 +71,8 @@ All notable changes to this project will be documented in this file.
 - Initial release.
 
 
-[Unreleased]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.2...HEAD
+[Unreleased]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.3...HEAD
+[0.3.3]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.2...release-0.3.3
 [0.3.2]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.1...release-0.3.2
 [0.3.1]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.0...release-0.3.1
 [0.3.0]: https://github.com/metaborg/spoofax3-depman/compare/release-0.2.4...release-0.3.0
