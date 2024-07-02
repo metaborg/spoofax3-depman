@@ -3,6 +3,8 @@
 kotlin                          = "1.8.20"                  # https://kotlinlang.org/
 gitonium                        = "1.2.0"                   # https://github.com/metaborg/gitonium
 metaborg-gradle-config          = "0.6.0"                   # https://github.com/metaborg/gradle.config
+spoofax-gradle                  = "0.5.9"                   # https://github.com/metaborg/spoofax.gradle
+devenv-spoofax-gradle           = "0.5.9"                   # https://github.com/metaborg/spoofax.gradle
 # Spoofax 3
 spoofax3                        = "0.0.0"                   # https://spoofax.dev/spoofax-pie/develop/ (https://github.com/metaborg/spoofax-pie)
 spoofax3-resource               = "0.14.1"                  # https://github.com/metaborg/resource
@@ -53,6 +55,14 @@ metaborg-gradle-kotlin-application  = { id = "org.metaborg.gradle.config.kotlin-
 metaborg-gradle-kotlin-testingonly  = { id = "org.metaborg.gradle.config.kotlin-testing-only",              version.ref = "metaborg-gradle-config" }
 metaborg-gradle-kotlin-gradleplugin = { id = "org.metaborg.gradle.config.kotlin-gradle-plugin",             version.ref = "metaborg-gradle-config" }
 metaborg-gradle-junit-testing       = { id = "org.metaborg.gradle.config.junit-testing",                    version.ref = "metaborg-gradle-config" }
+spoofax-gradle-base             = { id = "org.metaborg.spoofax.gradle.base",                                version.ref = "spoofax-gradle" }
+spoofax-gradle-langspec         = { id = "org.metaborg.spoofax.gradle.langspec",                            version.ref = "spoofax-gradle" }
+spoofax-gradle-project          = { id = "org.metaborg.spoofax.gradle.project",                             version.ref = "spoofax-gradle" }
+spoofax-gradle-test             = { id = "org.metaborg.spoofax.gradle.test",                                version.ref = "spoofax-gradle" }
+devenv-spoofax-gradle-base      = { id = "org.metaborg.devenv.spoofax.gradle.base",                         version.ref = "devenv-spoofax-gradle" }
+devenv-spoofax-gradle-langspec  = { id = "org.metaborg.devenv.spoofax.gradle.langspec",                     version.ref = "devenv-spoofax-gradle" }
+devenv-spoofax-gradle-project   = { id = "org.metaborg.devenv.spoofax.gradle.project",                      version.ref = "devenv-spoofax-gradle" }
+devenv-spoofax-gradle-test      = { id = "org.metaborg.devenv.spoofax.gradle.test",                         version.ref = "devenv-spoofax-gradle" }
 
 [libraries]
 # The below libraries ARE part of the Spoofax platform definition.
