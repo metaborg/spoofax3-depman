@@ -8,3 +8,4 @@ pluginManagement {
 
 include(":catalog")
 include(":platform")
+include(":example")
