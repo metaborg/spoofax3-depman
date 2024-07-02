@@ -36,10 +36,16 @@ dependencies {
         api(libs.spoofax2.nabl2.solver)
         api(libs.spoofax2.statix.solver)
         api(libs.spoofax2.sdf2table)
+        api(libs.spoofax2.sdf2parenthesize)
+        api(libs.spoofax2.makepermissive)
+        api(libs.spoofax2.parsetable)
         api(libs.spoofax2.renaming.java)
         api(libs.spoofax2.interpreter.library.index)
         api(libs.spoofax2.flowspec.runtime)
         api(libs.spoofax2.runtime.task)
+        api(libs.spoofax2.stratego.build)
+        api(libs.spoofax2.stratego.build.spoofax2)
+        api(libs.spoofax2.strategoxt)
 
         // Spoofax languages
         api(libs.spoofax.lang.esv)

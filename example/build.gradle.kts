@@ -35,10 +35,16 @@ dependencies {
     implementation(libs.spoofax2.nabl2.solver)
     implementation(libs.spoofax2.statix.solver)
     implementation(libs.spoofax2.sdf2table)
+    implementation(libs.spoofax2.sdf2parenthesize)
+    implementation(libs.spoofax2.makepermissive)
+    implementation(libs.spoofax2.parsetable)
     implementation(libs.spoofax2.renaming.java)
     implementation(libs.spoofax2.interpreter.library.index)
     implementation(libs.spoofax2.flowspec.runtime)
     implementation(libs.spoofax2.runtime.task)
+    implementation(libs.spoofax2.stratego.build)
+    implementation(libs.spoofax2.stratego.build.spoofax2)
+    implementation(libs.spoofax2.strategoxt)
 
     // Spoofax languages
     implementation(libs.spoofax.lang.esv)
