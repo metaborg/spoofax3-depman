@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 
 
 ## [Unreleased]
+
+
+## [0.3.0] - 2024-07-03
 - Add various dependencies.
 
 
@@ -56,7 +59,8 @@ All notable changes to this project will be documented in this file.
 - Initial release.
 
 
-[Unreleased]: https://github.com/metaborg/spoofax3-depman/compare/release-0.2.4...HEAD
+[Unreleased]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.0...HEAD
+[0.3.0]: https://github.com/metaborg/spoofax3-depman/compare/release-0.2.4...release-0.3.0
 [0.2.4]: https://github.com/metaborg/spoofax3-depman/compare/release-0.2.3...release-0.2.4
 [0.2.3]: https://github.com/metaborg/spoofax3-depman/compare/release-0.2.2...release-0.2.3
 [0.2.2]: https://github.com/metaborg/spoofax3-depman/compare/release-0.2.1...release-0.2.2
