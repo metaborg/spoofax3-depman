@@ -5,8 +5,12 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 
+## [0.3.4] - 2024-07-06
+- Add Metaborg Gradle Convention plugin.
+
+
 ## [0.3.3] - 2024-07-03
-- Add more Spoofax 2 dependenciies.
+- Add more Spoofax 2 dependencies.
 
 
 ## [0.3.2] - 2024-07-03
@@ -71,7 +75,8 @@ All notable changes to this project will be documented in this file.
 - Initial release.
 
 
-[Unreleased]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.3...HEAD
+[Unreleased]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.4...HEAD
+[0.3.4]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.3...release-0.3.4
 [0.3.3]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.2...release-0.3.3
 [0.3.2]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.1...release-0.3.2
 [0.3.1]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.0...release-0.3.1
