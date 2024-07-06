@@ -1,7 +1,7 @@
 ---
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-site_name: Gitonium
-site_description: A plugin for version management using Git
+site_name: Depman
+site_description: Spoofax dependency management
 site_author: Delft University of Technology
 
 docs_dir: content/
@@ -19,7 +19,7 @@ theme:
   name: material
   language: en
   icon:
-    logo: fontawesome/solid/code-fork
+    logo: fontawesome/solid/diagram-project
     repo: fontawesome/brands/github
   palette:
     # Light mode
