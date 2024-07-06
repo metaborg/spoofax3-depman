@@ -11,6 +11,9 @@ edit_uri: https://github.com/metaborg/gitonium/edit/main/docs
 nav:
   - Home:
       - index.md
+  - Develop:
+      - develop/index.md
+      - develop/adding-dependencies.md
 
 theme:
   name: material
