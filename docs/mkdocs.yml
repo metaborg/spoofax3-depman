@@ -5,8 +5,8 @@ site_description: Spoofax dependency management
 site_author: Delft University of Technology
 
 docs_dir: content/
-repo_url: https://github.com/metaborg/gitonium
-edit_uri: https://github.com/metaborg/gitonium/edit/main/docs
+repo_url: https://github.com/metaborg/spoofax3-depman
+edit_uri: https://github.com/metaborg/spoofax3-depman/edit/main/docs
 
 nav:
   - Home:
