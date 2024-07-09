@@ -113,9 +113,11 @@ dependencies {
     implementation(libs.guava)
     implementation(libs.failureaccess)
     implementation(libs.rxjava)
+    implementation(libs.jimfs)
 
     // Testing
     implementation(libs.junit)
+    implementation(libs.junit.params)
     implementation(libs.junit.vintage)
     implementation(libs.junit4)
     implementation(libs.kotest)

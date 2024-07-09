@@ -47,6 +47,7 @@ commons-configuration2          = "2.10.1"                  # https://commons.ap
 guava                           = "31.1-jre"                # https://github.com/google/guava
 failureaccess                   = "1.0.1"                   # https://github.com/google/guava
 rxjava                          = "3.0.2"                   # https://github.com/ReactiveX/RxJava?tab=readme-ov-file
+jimfs                           = "1.1"                     # https://github.com/google/jimfs
 # Testing
 junit                           = "5.10.1"                  # https://junit.org/
 junit4                          = "4.13.2"                  # https://junit.org/junit4/
@@ -87,10 +88,13 @@ develocity                      = { id = "org.gradle.develocity",               
 
 # Spoofax 3
 spoofax3-bom                    = { module = "org.metaborg.spoofax3:platform",                              version.ref = "spoofax3" }
-spoofax3-resource               = { module = "org.metaborg:resource",                                       version.ref = "spoofax3-resource" }
+spoofax3-resource-api           = { module = "org.metaborg:resource",                                       version.ref = "spoofax3-resource" }
+spoofax3-resource-dagger        = { module = "org.metaborg:resource.dagger",                                version.ref = "spoofax3-resource" }
 spoofax3-common                 = { module = "org.metaborg:common",                                         version.ref = "spoofax3-common" }
 spoofax3-log-api                = { module = "org.metaborg:log.api",                                        version.ref = "spoofax3-log" }
 spoofax3-log-backend-slf4j      = { module = "org.metaborg:log.backend.slf4j",                              version.ref = "spoofax3-log" }
+spoofax3-log-backend-logback    = { module = "org.metaborg:log.backend.logback",                            version.ref = "spoofax3-log" }
+spoofax3-log-dagger             = { module = "org.metaborg:log.dagger",                                     version.ref = "spoofax3-log" }
 spoofax3-pie-api                = { module = "org.metaborg:pie.api",                                        version.ref = "spoofax3-pie" }
 spoofax3-pie-runtime            = { module = "org.metaborg:pie.runtime",                                    version.ref = "spoofax3-pie" }
 spoofax3-pie-dagger             = { module = "org.metaborg:pie.dagger",                                     version.ref = "spoofax3-pie" }
@@ -194,9 +198,11 @@ commons-configuration2          = { module = "org.apache.commons:commons-configu
 guava                           = { module = "com.google.guava:guava",                                      version.ref = "guava" }
 failureaccess                   = { module = "com.google.guava:failureaccess",                              version.ref = "failureaccess" }
 rxjava                          = { module = "io.reactivex.rxjava3:rxjava",                                 version.ref = "rxjava" }
+jimfs                           = { module = "com.google.jimfs:jimfs",                                      version.ref = "jimfs" }
 
 # Testing
 junit                           = { module = "org.junit.jupiter:junit-jupiter",                             version.ref = "junit" }
+junit-params                    = { module = "org.junit.jupiter:junit-jupiter-params",                      version.ref = "junit" }
 junit-vintage                   = { module = "org.junit.vintage:junit-vintage-engine",                      version.ref = "junit" }
 junit4                          = { module = "junit:junit",                                                 version.ref = "junit4" }
 kotest                          = { module = "io.kotest:kotest-runner-junit5",                              version.ref = "kotest" }
