@@ -15,6 +15,8 @@ spoofax3-common                 = "0.11.0"                  # https://github.com
 spoofax3-log                    = "0.5.5"                   # https://github.com/metaborg/log/
 spoofax3-pie                    = "0.21.0"                  # https://github.com/metaborg/pie/
 spoofax2                        = "2.6.0-SNAPSHOT"          # https://spoofax.dev/ (https://github.com/metaborg/spoofax-releng)
+# Kotlin
+kotlinx-coroutines              = "1.8.1"                   # https://github.com/Kotlin/kotlinx.coroutines
 # Collections
 capsule                         = "0.6.3"                   # https://usethesource.io/projects/capsule/ (https://github.com/usethesource/capsule)
 # Dependency Injection
@@ -31,6 +33,11 @@ checkerframework                = "3.16.0"                  # https://checkerfra
 maven-resolver                  = "1.3.3"                   # https://maven.apache.org/resolver/index.html (https://github.com/apache/maven-resolver)
 maven                           = "3.6.0"                   # https://maven.apache.org/ (https://github.com/apache/maven)
 bnd                             = "5.3.0"                   # https://bnd.bndtools.org/ (https://github.com/bndtools/bnd)
+# Gradle
+# ECJ
+eclipse-jdt-core                = "3.25.0"                  # https://www.eclipse.org/jdt/core/
+eclipse-jdt-compiler-tool       = "1.2.1100"                # https://www.eclipse.org/jdt/
+eclipse-jdt-compiler-apt        = "1.3.1200"                # https://www.eclipse.org/jdt/
 # Logging
 slf4j                           = "1.7.30"                  # https://www.slf4j.org/ (https://github.com/qos-ch/slf4j)
 logback                         = "1.4.14"                  # https://logback.qos.ch/ (https://github.com/qos-ch/logback)
@@ -48,11 +55,15 @@ guava                           = "31.1-jre"                # https://github.com
 failureaccess                   = "1.0.1"                   # https://github.com/google/guava
 rxjava                          = "3.0.2"                   # https://github.com/ReactiveX/RxJava?tab=readme-ov-file
 jimfs                           = "1.1"                     # https://github.com/google/jimfs
+fst                             = "2.56"                    # https://github.com/RuedigerMoeller/fast-serialization
+kryo                            = "5.0.0"                   # https://github.com/EsotericSoftware/kryo
+lmdbjava                        = "0.8.1"                   # https://github.com/lmdbjava/lmdbjava
 # Testing
 junit                           = "5.10.1"                  # https://junit.org/
 junit4                          = "4.13.2"                  # https://junit.org/junit4/
 kotest                          = "5.8.1"                   # https://kotest.io/
 equalsverifier                  = "3.16.1"                  # https://jqno.nl/equalsverifier/ (https://github.com/jqno/equalsverifier)
+mockito-kotlin                  = "2.2.0"                   # https://github.com/mockito/mockito-kotlin
 
 
 [plugins]
@@ -144,6 +155,9 @@ spoofax-lang-stratego2          = { module = "org.metaborg:stratego.lang",      
 # The below libraries must NOT be part of the Spoofax platform definition.
 # NOTE: Do NOT include these in platform/build.gradle.kts
 
+# Kotlin
+kotlinx-coroutines-core         = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core",               version.ref = "kotlinx-coroutines" }
+
 # Collections
 capsule                         = { module = "io.usethesource:capsule",                                     version.ref = "capsule" }
 
@@ -153,8 +167,9 @@ dagger                          = { module = "com.google.dagger:dagger",        
 dagger-compiler                 = { module = "com.google.dagger:dagger-compiler",                           version.ref = "dagger" }
 
 # Annotations & Annotation Processing
-immutables-value                = { module = "org.immutables:value",                                        version.ref = "immutables" }
 immutables-serial               = { module = "org.immutables:serial",                                       version.ref = "immutables" }
+immutables-value                = { module = "org.immutables:value",                                        version.ref = "immutables" }
+immutables-value-annotations    = { module = "org.immutables:value-annotations",                            version.ref = "immutables" }
 derive4j                        = { module = "org.derive4j:derive4j",                                       version.ref = "derive4j" }
 derive4j-annotation             = { module = "org.derive4j:derive4j-annotation",                            version.ref = "derive4j" }
 jakarta-annotation              = { module = "jakarta.annotation:jakarta.annotation-api",                   version.ref = "jakarta-annotation" }
@@ -173,6 +188,11 @@ bnd-gradle                      = { module = "biz.aQute.bnd:biz.aQute.bnd.gradle
 # Gradle
 gradle-develocityPlugin         = { module = "com.gradle:develocity-gradle-plugin",                         version.ref = "develocity" }
 gradle-foojayPlugin             = { module = "org.gradle.toolchains:foojay-resolver",                       version.ref = "foojay" }
+
+# ECJ
+eclipse-jdt-core                = { module = "org.eclipse.jdt:org.eclipse.jdt.core",                        version.ref = "eclipse-jdt-core" }
+eclipse-jdt-compiler-tool       = { module = "org.eclipse.jdt:org.eclipse.jdt.compiler.tool",               version.ref = "eclipse-jdt-compiler-tool" }
+eclipse-jdt-compiler-apt        = { module = "org.eclipse.jdt:org.eclipse.jdt.compiler.apt",                version.ref = "eclipse-jdt-compiler-apt" }
 
 # Logging
 slf4j-simple                    = { module = "org.slf4j:slf4j-simple",                                      version.ref = "slf4j" }
@@ -199,9 +219,13 @@ guava                           = { module = "com.google.guava:guava",          
 failureaccess                   = { module = "com.google.guava:failureaccess",                              version.ref = "failureaccess" }
 rxjava                          = { module = "io.reactivex.rxjava3:rxjava",                                 version.ref = "rxjava" }
 jimfs                           = { module = "com.google.jimfs:jimfs",                                      version.ref = "jimfs" }
+fst                             = { module = "de.ruedigermoeller:fst",                                      version.ref = "fst" }
+kryo                            = { module = "com.esotericsoftware.kryo:kryo5",                             version.ref = "kryo" }
+lmdbjava                        = { module = "org.lmdbjava:lmdbjava",                                       version.ref = "lmdbjava" }
 
 # Testing
 junit                           = { module = "org.junit.jupiter:junit-jupiter",                             version.ref = "junit" }
+junit-api                       = { module = "org.junit.jupiter:junit-jupiter-api",                         version.ref = "junit" }
 junit-params                    = { module = "org.junit.jupiter:junit-jupiter-params",                      version.ref = "junit" }
 junit-vintage                   = { module = "org.junit.vintage:junit-vintage-engine",                      version.ref = "junit" }
 junit4                          = { module = "junit:junit",                                                 version.ref = "junit4" }
@@ -210,3 +234,4 @@ kotest-assertions               = { module = "io.kotest:kotest-assertions-core",
 kotest-datatest                 = { module = "io.kotest:kotest-framework-datatest",                         version.ref = "kotest" }
 kotest-property                 = { module = "io.kotest:kotest-property",                                   version.ref = "kotest" }
 equalsverifier                  = { module = "nl.jqno.equalsverifier:equalsverifier",                       version.ref = "equalsverifier" }
+mockito-kotlin                  = { module = "com.nhaarman.mockitokotlin2:mockito-kotlin",                  version.ref = "mockito-kotlin" }

@@ -64,6 +64,9 @@ dependencies {
     implementation(libs.spoofax.meta.statix.runtime)
     implementation(libs.spoofax.lang.stratego2)
 
+    // Kotlin
+    implementation(libs.kotlinx.coroutines.core)
+
     // Collections
     implementation(libs.capsule)
 
@@ -73,8 +76,9 @@ dependencies {
     implementation(libs.dagger.compiler)
 
     // Annotations & Annotation Processing
-    implementation(libs.immutables.value)
     implementation(libs.immutables.serial)
+    implementation(libs.immutables.value)
+    implementation(libs.immutables.value.annotations)
     implementation(libs.derive4j)
     implementation(libs.derive4j.annotation)
     implementation(libs.jakarta.annotation)
@@ -93,6 +97,11 @@ dependencies {
     // Gradle
     implementation(libs.gradle.develocityPlugin)
     implementation(libs.gradle.foojayPlugin)
+
+    // ECJ
+    implementation(libs.eclipse.jdt.core)
+    implementation(libs.eclipse.jdt.compiler.tool)
+    implementation(libs.eclipse.jdt.compiler.apt)
 
     // Logging
     implementation(libs.slf4j.simple)
@@ -119,9 +128,13 @@ dependencies {
     implementation(libs.failureaccess)
     implementation(libs.rxjava)
     implementation(libs.jimfs)
+    implementation(libs.fst)
+    implementation(libs.kryo)
+    implementation(libs.lmdbjava)
 
     // Testing
     implementation(libs.junit)
+    implementation(libs.junit.api)
     implementation(libs.junit.params)
     implementation(libs.junit.vintage)
     implementation(libs.junit4)
@@ -130,6 +143,7 @@ dependencies {
     implementation(libs.kotest.datatest)
     implementation(libs.kotest.property)
     implementation(libs.equalsverifier)
+    implementation(libs.mockito.kotlin)
 
 }
 
