@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 
+## [0.3.11]
+- Add PIE dependencies.
+
+
 ## [0.3.10]
 - Add dependencies for PIE.
 
@@ -100,7 +104,8 @@ All notable changes to this project will be documented in this file.
 - Initial release.
 
 
-[Unreleased]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.10...HEAD
+[Unreleased]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.11...HEAD
+[0.3.11]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.10...release-0.3.11
 [0.3.10]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.9...release-0.3.10
 [0.3.9]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.8...release-0.3.9
 [0.3.8]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.7...release-0.3.8
