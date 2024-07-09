@@ -5,7 +5,7 @@ gitonium                        = "1.2.0"                   # https://github.com
 metaborg-gradle-config          = "0.7.0"                   # https://github.com/metaborg/gradle.config
 spoofax-gradle                  = "0.5.9"                   # https://github.com/metaborg/spoofax.gradle
 devenv-spoofax-gradle           = "0.5.9"                   # https://github.com/metaborg/spoofax.gradle
-metaborg-gradle-convention      = "0.0.3"                   # https://github.com/metaborg/metaborg-gradle
+metaborg-gradle-convention      = "0.0.4"                   # https://github.com/metaborg/metaborg-gradle
 # Spoofax 3
 spoofax3                        = "0.0.0"                   # https://spoofax.dev/spoofax-pie/develop/ (https://github.com/metaborg/spoofax-pie)
 spoofax3-resource               = "0.14.1"                  # https://github.com/metaborg/resource
@@ -75,6 +75,7 @@ devenv-spoofax-gradle-project   = { id = "org.metaborg.devenv.spoofax.gradle.pro
 devenv-spoofax-gradle-test      = { id = "org.metaborg.devenv.spoofax.gradle.test",                         version.ref = "devenv-spoofax-gradle" }
 metaborg-convention-java            = { id = "org.metaborg.convention.java",                                version.ref = "metaborg-gradle-convention" }
 metaborg-convention-mavenpublish    = { id = "org.metaborg.convention.maven-publish",                       version.ref = "metaborg-gradle-convention" }
+metaborg-convention-rootproject     = { id = "org.metaborg.convention.root-project",                        version.ref = "metaborg-gradle-convention" }
 
 [libraries]
 # The below libraries ARE part of the Spoofax platform definition.

@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.3.5] - 2024-07-09
+- Update Metaborg Gradle Convention plugin.
 
 ## [0.3.4] - 2024-07-06
 - Add Metaborg Gradle Convention plugin.
