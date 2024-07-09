@@ -2,7 +2,7 @@
 # Plugins
 kotlin                          = "1.8.20"                  # https://kotlinlang.org/
 gitonium                        = "1.2.0"                   # https://github.com/metaborg/gitonium
-metaborg-gradle-config          = "0.6.0"                   # https://github.com/metaborg/gradle.config
+metaborg-gradle-config          = "0.7.0"                   # https://github.com/metaborg/gradle.config
 spoofax-gradle                  = "0.5.9"                   # https://github.com/metaborg/spoofax.gradle
 devenv-spoofax-gradle           = "0.5.9"                   # https://github.com/metaborg/spoofax.gradle
 metaborg-gradle-convention      = "0.0.3"                   # https://github.com/metaborg/metaborg-gradle
