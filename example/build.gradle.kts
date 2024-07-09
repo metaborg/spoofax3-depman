@@ -10,10 +10,13 @@ repositories {
 
 dependencies {
     // Spoofax 3
-    implementation(libs.spoofax3.resource)
+    implementation(libs.spoofax3.resource.api)
+    implementation(libs.spoofax3.resource.dagger)
     implementation(libs.spoofax3.common)
     implementation(libs.spoofax3.log.api)
     implementation(libs.spoofax3.log.backend.slf4j)
+    implementation(libs.spoofax3.log.backend.logback)
+    implementation(libs.spoofax3.log.dagger)
     implementation(libs.spoofax3.pie.api)
     implementation(libs.spoofax3.pie.runtime)
     implementation(libs.spoofax3.pie.dagger)

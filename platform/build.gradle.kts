@@ -11,10 +11,13 @@ dependencies {
     constraints {
         // NOTE: Also update part of libs.versions.toml
         // Spoofax 3
-        api(libs.spoofax3.resource)
+        api(libs.spoofax3.resource.api)
+        api(libs.spoofax3.resource.dagger)
         api(libs.spoofax3.common)
         api(libs.spoofax3.log.api)
         api(libs.spoofax3.log.backend.slf4j)
+        api(libs.spoofax3.log.backend.logback)
+        api(libs.spoofax3.log.dagger)
         api(libs.spoofax3.pie.api)
         api(libs.spoofax3.pie.runtime)
         api(libs.spoofax3.pie.dagger)
