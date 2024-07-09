@@ -168,6 +168,7 @@ bnd-gradle                      = { module = "biz.aQute.bnd:biz.aQute.bnd.gradle
 
 # Gradle
 gradle-develocityPlugin         = { module = "com.gradle:develocity-gradle-plugin",                         version.ref = "develocity" }
+gradle-foojayPlugin             = { module = "org.gradle.toolchains:foojay-resolver",                       version.ref = "foojay" }
 
 # Logging
 slf4j-simple                    = { module = "org.slf4j:slf4j-simple",                                      version.ref = "slf4j" }

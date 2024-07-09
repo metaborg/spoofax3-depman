@@ -85,6 +85,10 @@ dependencies {
     implementation(libs.maven.resolver.provider)
     implementation(libs.bnd.gradle)
 
+    // Gradle
+    implementation(libs.gradle.develocityPlugin)
+    implementation(libs.gradle.foojayPlugin)
+
     // Logging
     implementation(libs.slf4j.simple)
     implementation(libs.slf4j.api)

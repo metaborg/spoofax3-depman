@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.3.7] - 2024-07-09
+- Add Foojay plugin dependency.
+
+
 ## [0.3.6] - 2024-07-09
 - Add Develocity and Foojay plugins.
 
@@ -83,7 +87,8 @@ All notable changes to this project will be documented in this file.
 - Initial release.
 
 
-[Unreleased]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.6...HEAD
+[Unreleased]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.7...HEAD
+[0.3.7]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.6...release-0.3.7
 [0.3.6]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.5...release-0.3.6
 [0.3.5]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.4...release-0.3.5
 [0.3.4]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.3...release-0.3.4
