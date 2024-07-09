@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.3.6] - 2024-07-09
+- Add Develocity and Foojay plugins.
+
+
 ## [0.3.5] - 2024-07-09
 - Update Metaborg Gradle Convention plugin.
 - Update Dagger.
@@ -79,7 +83,9 @@ All notable changes to this project will be documented in this file.
 - Initial release.
 
 
-[Unreleased]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.4...HEAD
+[Unreleased]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.6...HEAD
+[0.3.6]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.5...release-0.3.6
+[0.3.5]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.4...release-0.3.5
 [0.3.4]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.3...release-0.3.4
 [0.3.3]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.2...release-0.3.3
 [0.3.2]: https://github.com/metaborg/spoofax3-depman/compare/release-0.3.1...release-0.3.2
