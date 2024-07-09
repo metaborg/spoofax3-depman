@@ -9,6 +9,8 @@ repositories {
 }
 
 dependencies {
+    implementation(platform(libs.spoofax3.platform))
+
     // Spoofax 3
     implementation(libs.spoofax3.resource.api)
     implementation(libs.spoofax3.resource.dagger)

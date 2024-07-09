@@ -9,8 +9,8 @@ devenv-spoofax-gradle           = "0.5.9"                   # https://github.com
 metaborg-gradle-convention      = "0.0.4"                   # https://github.com/metaborg/metaborg-gradle
 develocity                      = "3.17.5"                  # https://docs.gradle.com/develocity/gradle-plugin/current/ (https://plugins.gradle.org/plugin/com.gradle.develocity)
 # Spoofax 3
-spoofax3                        = "0.0.0"                   # https://spoofax.dev/spoofax-pie/develop/ (https://github.com/metaborg/spoofax-pie)
-spoofax3-resource               = "0.14.1"                  # https://github.com/metaborg/resource
+spoofax3-depman                 = "0.3.8"                   # https://github.com/metaborg/spoofax3-depman/
+spoofax3-resource               = "0.14.1"                  # https://github.com/metaborg/resource/
 spoofax3-common                 = "0.11.0"                  # https://github.com/metaborg/common/
 spoofax3-log                    = "0.5.5"                   # https://github.com/metaborg/log/
 spoofax3-pie                    = "0.21.0"                  # https://github.com/metaborg/pie/
@@ -87,7 +87,7 @@ develocity                      = { id = "org.gradle.develocity",               
 # NOTE: Also update: platform/build.gradle.kts
 
 # Spoofax 3
-spoofax3-bom                    = { module = "org.metaborg.spoofax3:platform",                              version.ref = "spoofax3" }
+spoofax3-platform               = { module = "org.metaborg.spoofax3:platform",                              version.ref = "spoofax3-depman" }
 spoofax3-resource-api           = { module = "org.metaborg:resource",                                       version.ref = "spoofax3-resource" }
 spoofax3-resource-dagger        = { module = "org.metaborg:resource.dagger",                                version.ref = "spoofax3-resource" }
 spoofax3-common                 = { module = "org.metaborg:common",                                         version.ref = "spoofax3-common" }
