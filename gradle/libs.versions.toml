@@ -2,10 +2,12 @@
 # Plugins
 kotlin                          = "1.8.20"                  # https://kotlinlang.org/
 gitonium                        = "1.2.0"                   # https://github.com/metaborg/gitonium
+foojay                          = "0.8.0"                   # https://github.com/gradle/foojay-toolchains
 metaborg-gradle-config          = "0.7.0"                   # https://github.com/metaborg/gradle.config
 spoofax-gradle                  = "0.5.9"                   # https://github.com/metaborg/spoofax.gradle
 devenv-spoofax-gradle           = "0.5.9"                   # https://github.com/metaborg/spoofax.gradle
 metaborg-gradle-convention      = "0.0.4"                   # https://github.com/metaborg/metaborg-gradle
+develocity                      = "3.17.5"                  # https://docs.gradle.com/develocity/gradle-plugin/current/ (https://plugins.gradle.org/plugin/com.gradle.develocity)
 # Spoofax 3
 spoofax3                        = "0.0.0"                   # https://spoofax.dev/spoofax-pie/develop/ (https://github.com/metaborg/spoofax-pie)
 spoofax3-resource               = "0.14.1"                  # https://github.com/metaborg/resource
@@ -55,6 +57,7 @@ equalsverifier                  = "3.16.1"                  # https://jqno.nl/eq
 [plugins]
 kotlin-jvm                      = { id = "org.jetbrains.kotlin.jvm",                                        version.ref = "kotlin" }
 gitonium                        = { id = "org.metaborg.gitonium",                                           version.ref = "gitonium" }
+foojay-resolver-convention      = { id = "org.gradle.toolchains.foojay-resolver-convention",                version.ref = "foojay" }
 metaborg-gradle-rootproject         = { id = "org.metaborg.gradle.config.root-project",                     version.ref = "metaborg-gradle-config" }
 metaborg-gradle-subproject          = { id = "org.metaborg.gradle.config.sub-project",                      version.ref = "metaborg-gradle-config" }
 metaborg-gradle-java-library        = { id = "org.metaborg.gradle.config.java-library",                     version.ref = "metaborg-gradle-config" }
@@ -76,6 +79,7 @@ devenv-spoofax-gradle-test      = { id = "org.metaborg.devenv.spoofax.gradle.tes
 metaborg-convention-java            = { id = "org.metaborg.convention.java",                                version.ref = "metaborg-gradle-convention" }
 metaborg-convention-mavenpublish    = { id = "org.metaborg.convention.maven-publish",                       version.ref = "metaborg-gradle-convention" }
 metaborg-convention-rootproject     = { id = "org.metaborg.convention.root-project",                        version.ref = "metaborg-gradle-convention" }
+develocity                      = { id = "org.gradle.develocity",                                           version.ref = "develocity" }
 
 [libraries]
 # The below libraries ARE part of the Spoofax platform definition.
@@ -161,6 +165,9 @@ maven-resolver-connector-basic  = { module = "org.apache.maven.resolver:maven-re
 maven-resolver-transport-file   = { module = "org.apache.maven.resolver:maven-resolver-transport-file",     version.ref = "maven-resolver" }
 maven-resolver-provider         = { module = "org.apache.maven:maven-resolver-provider",                    version.ref = "maven" }
 bnd-gradle                      = { module = "biz.aQute.bnd:biz.aQute.bnd.gradle",                          version.ref = "bnd" }
+
+# Gradle
+gradle-develocityPlugin         = { module = "com.gradle:develocity-gradle-plugin",                         version.ref = "develocity" }
 
 # Logging
 slf4j-simple                    = { module = "org.slf4j:slf4j-simple",                                      version.ref = "slf4j" }
