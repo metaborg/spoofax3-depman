@@ -8,12 +8,13 @@ spoofax-gradle                  = "0.5.9"                   # https://github.com
 devenv-spoofax-gradle           = "0.5.9"                   # https://github.com/metaborg/spoofax.gradle
 metaborg-gradle-convention      = "0.0.4"                   # https://github.com/metaborg/metaborg-gradle
 develocity                      = "3.17.5"                  # https://docs.gradle.com/develocity/gradle-plugin/current/ (https://plugins.gradle.org/plugin/com.gradle.develocity)
-# Spoofax 3
-spoofax3-depman                 = "0.3.8"                   # https://github.com/metaborg/spoofax3-depman/
-spoofax3-resource               = "0.14.1"                  # https://github.com/metaborg/resource/
-spoofax3-common                 = "0.11.0"                  # https://github.com/metaborg/common/
-spoofax3-log                    = "0.5.5"                   # https://github.com/metaborg/log/
-spoofax3-pie                    = "0.21.0"                  # https://github.com/metaborg/pie/
+
+# Spoofax
+metaborg-depman                 = "0.3.8"                   # https://github.com/metaborg/spoofax3-depman/
+metaborg-resource               = "0.14.1"                  # https://github.com/metaborg/resource/
+metaborg-common                 = "0.11.0"                  # https://github.com/metaborg/common/
+metaborg-log                    = "0.5.5"                   # https://github.com/metaborg/log/
+metaborg-pie                    = "0.21.0"                  # https://github.com/metaborg/pie/
 spoofax2                        = "2.6.0-SNAPSHOT"          # https://spoofax.dev/ (https://github.com/metaborg/spoofax-releng)
 # Kotlin
 kotlinx-coroutines              = "1.8.1"                   # https://github.com/Kotlin/kotlinx.coroutines
@@ -97,33 +98,43 @@ develocity                      = { id = "org.gradle.develocity",               
 # The below libraries ARE part of the Spoofax platform definition.
 # NOTE: Also update: platform/build.gradle.kts
 
+# Metaborg Depman
+metaborg-platform               = { module = "org.metaborg.spoofax3:platform",                              version.ref = "metaborg-depman" }
+
+# Metaborg Resource
+metaborg-resource-api           = { module = "org.metaborg:resource",                                       version.ref = "metaborg-resource" }
+metaborg-resource-dagger        = { module = "org.metaborg:resource.dagger",                                version.ref = "metaborg-resource" }
+
+# Metaborg Common
+metaborg-common                 = { module = "org.metaborg:common",                                         version.ref = "metaborg-common" }
+
+# Metaborg Log
+metaborg-log-api                = { module = "org.metaborg:log.api",                                        version.ref = "metaborg-log" }
+metaborg-log-backend-slf4j      = { module = "org.metaborg:log.backend.slf4j",                              version.ref = "metaborg-log" }
+metaborg-log-backend-logback    = { module = "org.metaborg:log.backend.logback",                            version.ref = "metaborg-log" }
+metaborg-log-dagger             = { module = "org.metaborg:log.dagger",                                     version.ref = "metaborg-log" }
+
+# Metaborg PIE
+metaborg-pie-api                = { module = "org.metaborg:pie.api",                                        version.ref = "metaborg-pie" }
+metaborg-pie-api-test           = { module = "org.metaborg:pie.api.test",                                   version.ref = "metaborg-pie" }
+metaborg-pie-dagger             = { module = "org.metaborg:pie.dagger",                                     version.ref = "metaborg-pie" }
+metaborg-pie-graph              = { module = "org.metaborg:pie.graph",                                      version.ref = "metaborg-pie" }
+metaborg-pie-runtime            = { module = "org.metaborg:pie.runtime",                                    version.ref = "metaborg-pie" }
+metaborg-pie-runtime-test       = { module = "org.metaborg:pie.runtime.test",                               version.ref = "metaborg-pie" }
+metaborg-pie-serde-fst          = { module = "org.metaborg:pie.serde.fst",                                  version.ref = "metaborg-pie" }
+metaborg-pie-serde-kryo         = { module = "org.metaborg:pie.serde.kryo",                                 version.ref = "metaborg-pie" }
+metaborg-pie-share-coroutine    = { module = "org.metaborg:pie.share.coroutine",                            version.ref = "metaborg-pie" }
+metaborg-pie-store-lmdb         = { module = "org.metaborg:pie.store.lmdb",                                 version.ref = "metaborg-pie" }
+metaborg-pie-task-archive       = { module = "org.metaborg:pie.task.archive",                               version.ref = "metaborg-pie" }
+metaborg-pie-task-java          = { module = "org.metaborg:pie.task.java",                                  version.ref = "metaborg-pie" }
+metaborg-pie-task-java-ecj      = { module = "org.metaborg:pie.task.java.ecj",                              version.ref = "metaborg-pie" }
+metaborg-pie-taskdefs-guice     = { module = "org.metaborg:pie.taskdefs.guice",                             version.ref = "metaborg-pie" }
+metaborg-pie-lang               = { module = "org.metaborg:pie.lang",                                       version.ref = "metaborg-pie" }
+metaborg-pie-lang-runtime-java  = { module = "org.metaborg:pie.lang.runtime.java",                          version.ref = "metaborg-pie" }
+metaborg-pie-lang-runtime-kotlin= { module = "org.metaborg:pie.lang.runtime.kotlin",                        version.ref = "metaborg-pie" }
+metaborg-pie-lang-test          = { module = "org.metaborg:pie.lang.test",                                  version.ref = "metaborg-pie" }
+
 # Spoofax 3
-spoofax3-platform               = { module = "org.metaborg.spoofax3:platform",                              version.ref = "spoofax3-depman" }
-spoofax3-resource-api           = { module = "org.metaborg:resource",                                       version.ref = "spoofax3-resource" }
-spoofax3-resource-dagger        = { module = "org.metaborg:resource.dagger",                                version.ref = "spoofax3-resource" }
-spoofax3-common                 = { module = "org.metaborg:common",                                         version.ref = "spoofax3-common" }
-spoofax3-log-api                = { module = "org.metaborg:log.api",                                        version.ref = "spoofax3-log" }
-spoofax3-log-backend-slf4j      = { module = "org.metaborg:log.backend.slf4j",                              version.ref = "spoofax3-log" }
-spoofax3-log-backend-logback    = { module = "org.metaborg:log.backend.logback",                            version.ref = "spoofax3-log" }
-spoofax3-log-dagger             = { module = "org.metaborg:log.dagger",                                     version.ref = "spoofax3-log" }
-spoofax3-pie-api                = { module = "org.metaborg:pie.api",                                        version.ref = "spoofax3-pie" }
-spoofax3-pie-api-test           = { module = "org.metaborg:pie.api.test",                                   version.ref = "spoofax3-pie" }
-spoofax3-pie-dagger             = { module = "org.metaborg:pie.dagger",                                     version.ref = "spoofax3-pie" }
-spoofax3-pie-graph              = { module = "org.metaborg:pie.graph",                                      version.ref = "spoofax3-pie" }
-spoofax3-pie-runtime            = { module = "org.metaborg:pie.runtime",                                    version.ref = "spoofax3-pie" }
-spoofax3-pie-runtime-test       = { module = "org.metaborg:pie.runtime.test",                               version.ref = "spoofax3-pie" }
-spoofax3-pie-serde-fst          = { module = "org.metaborg:pie.serde.fst",                                  version.ref = "spoofax3-pie" }
-spoofax3-pie-serde-kryo         = { module = "org.metaborg:pie.serde.kryo",                                 version.ref = "spoofax3-pie" }
-spoofax3-pie-share-coroutine    = { module = "org.metaborg:pie.share.coroutine",                            version.ref = "spoofax3-pie" }
-spoofax3-pie-store-lmdb         = { module = "org.metaborg:pie.store.lmdb",                                 version.ref = "spoofax3-pie" }
-spoofax3-pie-task-archive       = { module = "org.metaborg:pie.task.archive",                               version.ref = "spoofax3-pie" }
-spoofax3-pie-task-java          = { module = "org.metaborg:pie.task.java",                                  version.ref = "spoofax3-pie" }
-spoofax3-pie-task-java-ecj      = { module = "org.metaborg:pie.task.java.ecj",                              version.ref = "spoofax3-pie" }
-spoofax3-pie-taskdefs-guice     = { module = "org.metaborg:pie.taskdefs.guice",                             version.ref = "spoofax3-pie" }
-spoofax3-pie-lang               = { module = "org.metaborg:pie.lang",                                       version.ref = "spoofax3-pie" }
-spoofax3-pie-lang-runtime-java  = { module = "org.metaborg:pie.lang.runtime.java",                          version.ref = "spoofax3-pie" }
-spoofax3-pie-lang-runtime-kotlin= { module = "org.metaborg:pie.lang.runtime.kotlin",                        version.ref = "spoofax3-pie" }
-spoofax3-pie-lang-test          = { module = "org.metaborg:pie.lang.test",                                  version.ref = "spoofax3-pie" }
 
 # Spoofax 2
 spoofax2-metaborg-util          = { module = "org.metaborg:org.metaborg.util",                              version.ref = "spoofax2" }
@@ -153,7 +164,7 @@ spoofax2-stratego-build         = { module = "org.metaborg:stratego.build",     
 spoofax2-stratego-build-spoofax2    = { module = "org.metaborg:stratego.build.spoofax2",                    version.ref = "spoofax2" }
 spoofax2-strategoxt             = { module = "org.metaborg:strategoxt-min-jar",                             version.ref = "spoofax2" }
 
-# Spoofax languages
+# Spoofax Languages
 spoofax-lang-esv                = { module = "org.metaborg:org.metaborg.meta.lang.esv",                     version.ref = "spoofax2" }
 spoofax-lang-sdf3               = { module = "org.metaborg:org.metaborg.meta.lang.template",                version.ref = "spoofax2" }
 spoofax-lang-spt                = { module = "org.metaborg:org.metaborg.meta.lang.spt",                     version.ref = "spoofax2" }
