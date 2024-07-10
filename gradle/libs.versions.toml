@@ -67,6 +67,7 @@ junit4                          = "4.13.2"                  # https://junit.org/
 kotest                          = "5.8.1"                   # https://kotest.io/
 equalsverifier                  = "3.16.1"                  # https://jqno.nl/equalsverifier/ (https://github.com/jqno/equalsverifier)
 mockito-kotlin                  = "2.2.0"                   # https://github.com/mockito/mockito-kotlin
+jmh                             = "1.26"                    # https://openjdk.java.net/projects/code-tools/jmh/ (https://github.com/openjdk/jmh)
 
 
 [plugins]
@@ -229,6 +230,7 @@ eclipse-jdt-compiler-apt        = { module = "org.eclipse.jdt:org.eclipse.jdt.co
 # Logging
 slf4j-simple                    = { module = "org.slf4j:slf4j-simple",                                      version.ref = "slf4j" }
 slf4j-api                       = { module = "org.slf4j:slf4j-api",                                         version.ref = "slf4j" }
+slf4j-nop                       = { module = "org.slf4j:slf4j-nop",                                         version.ref = "slf4j" }
 jcl-over-slf4j                  = { module = "org.slf4j:jcl-over-slf4j",                                    version.ref = "slf4j" }
 logback-core                    = { module = "ch.qos.logback:logback-core",                                 version.ref = "logback" }
 logback                         = { module = "ch.qos.logback:logback-classic",                              version.ref = "logback" }
@@ -267,3 +269,5 @@ kotest-datatest                 = { module = "io.kotest:kotest-framework-datates
 kotest-property                 = { module = "io.kotest:kotest-property",                                   version.ref = "kotest" }
 equalsverifier                  = { module = "nl.jqno.equalsverifier:equalsverifier",                       version.ref = "equalsverifier" }
 mockito-kotlin                  = { module = "com.nhaarman.mockitokotlin2:mockito-kotlin",                  version.ref = "mockito-kotlin" }
+jmh-core                        = { module = "org.openjdk.jmh:jmh-core",                                    version.ref = "jmh" }
+jmh-generator-annprocess        = { module = "org.openjdk.jmh:jmh-generator-annprocess",                    version.ref = "jmh" }
