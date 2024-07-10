@@ -15,7 +15,9 @@ metaborg-resource               = "0.14.1"                  # https://github.com
 metaborg-common                 = "0.11.0"                  # https://github.com/metaborg/common/
 metaborg-log                    = "0.5.5"                   # https://github.com/metaborg/log/
 metaborg-pie                    = "0.21.0"                  # https://github.com/metaborg/pie/
+spoofax3                        = "0.8.0"                   # https://github.com/metaborg/spoofax-pie
 spoofax2                        = "2.6.0-SNAPSHOT"          # https://spoofax.dev/ (https://github.com/metaborg/spoofax-releng)
+
 # Kotlin
 kotlinx-coroutines              = "1.8.1"                   # https://github.com/Kotlin/kotlinx.coroutines
 # Collections
@@ -135,6 +137,10 @@ metaborg-pie-lang-runtime-kotlin= { module = "org.metaborg:pie.lang.runtime.kotl
 metaborg-pie-lang-test          = { module = "org.metaborg:pie.lang.test",                                  version.ref = "metaborg-pie" }
 
 # Spoofax 3
+spoofax3-lwb-compiler           = { module = "org.metaborg:spoofax.lwb.compiler",                           version.ref = "spoofax3" }
+spoofax3-lwb-compiler-dagger    = { module = "org.metaborg:spoofax.lwb.compiler.dagger",                    version.ref = "spoofax3" }
+spoofax3-lwb-compiler-gradle    = { module = "org.metaborg:spoofax.lwb.compiler.gradle",                    version.ref = "spoofax3" }
+spoofax3-lwb-dynamicloading     = { module = "org.metaborg:spoofax.lwb.dynamicloading",                     version.ref = "spoofax3" }
 
 # Spoofax 2
 spoofax2-metaborg-util          = { module = "org.metaborg:org.metaborg.util",                              version.ref = "spoofax2" }
