@@ -10,32 +10,45 @@ description = "A Spoofax 3 platform."
 dependencies {
     constraints {
         // NOTE: Also update part of libs.versions.toml
+
+        // Metaborg Resource
+        api(libs.metaborg.resource.api)
+        api(libs.metaborg.resource.dagger)
+
+        // Metaborg Common
+        api(libs.metaborg.common)
+
+        // Metaborg Log
+        api(libs.metaborg.log.api)
+        api(libs.metaborg.log.backend.slf4j)
+        api(libs.metaborg.log.backend.logback)
+        api(libs.metaborg.log.dagger)
+
+        // Metaborg PIE
+        api(libs.metaborg.pie.api)
+        api(libs.metaborg.pie.api.test)
+        api(libs.metaborg.pie.dagger)
+        api(libs.metaborg.pie.graph)
+        api(libs.metaborg.pie.runtime)
+        api(libs.metaborg.pie.runtime.test)
+        api(libs.metaborg.pie.serde.fst)
+        api(libs.metaborg.pie.serde.kryo)
+        api(libs.metaborg.pie.share.coroutine)
+        api(libs.metaborg.pie.store.lmdb)
+        api(libs.metaborg.pie.task.archive)
+        api(libs.metaborg.pie.task.java)
+        api(libs.metaborg.pie.task.java.ecj)
+        api(libs.metaborg.pie.taskdefs.guice)
+        api(libs.metaborg.pie.lang)
+        api(libs.metaborg.pie.lang.runtime.java)
+        api(libs.metaborg.pie.lang.runtime.kotlin)
+        api(libs.metaborg.pie.lang.test)
+
         // Spoofax 3
-        api(libs.spoofax3.resource.api)
-        api(libs.spoofax3.resource.dagger)
-        api(libs.spoofax3.common)
-        api(libs.spoofax3.log.api)
-        api(libs.spoofax3.log.backend.slf4j)
-        api(libs.spoofax3.log.backend.logback)
-        api(libs.spoofax3.log.dagger)
-        api(libs.spoofax3.pie.api)
-        api(libs.spoofax3.pie.api.test)
-        api(libs.spoofax3.pie.dagger)
-        api(libs.spoofax3.pie.graph)
-        api(libs.spoofax3.pie.runtime)
-        api(libs.spoofax3.pie.runtime.test)
-        api(libs.spoofax3.pie.serde.fst)
-        api(libs.spoofax3.pie.serde.kryo)
-        api(libs.spoofax3.pie.share.coroutine)
-        api(libs.spoofax3.pie.store.lmdb)
-        api(libs.spoofax3.pie.task.archive)
-        api(libs.spoofax3.pie.task.java)
-        api(libs.spoofax3.pie.task.java.ecj)
-        api(libs.spoofax3.pie.taskdefs.guice)
-        api(libs.spoofax3.pie.lang)
-        api(libs.spoofax3.pie.lang.runtime.java)
-        api(libs.spoofax3.pie.lang.runtime.kotlin)
-        api(libs.spoofax3.pie.lang.test)
+        api(libs.spoofax3.lwb.compiler)
+        api(libs.spoofax3.lwb.compiler.dagger)
+        api(libs.spoofax3.lwb.compiler.gradle)
+        api(libs.spoofax3.lwb.dynamicloading)
 
         // Spoofax 2
         api(libs.spoofax2.metaborg.util)
