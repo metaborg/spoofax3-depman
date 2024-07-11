@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 
+## [0.4.2] - 2024-07-11
+- Add Spoofax 3/PIE dependencies.
+
+
 ## [0.4.1] - 2024-07-11
 - Add Spoofax 2 dependencies.
 

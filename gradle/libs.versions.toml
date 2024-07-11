@@ -16,7 +16,7 @@ metaborg-common                 = "0.11.0"                  # https://github.com
 metaborg-log                    = "0.5.5"                   # https://github.com/metaborg/log/
 metaborg-pie                    = "0.21.0"                  # https://github.com/metaborg/pie/
 strategoxt                      = "0.1.36"                  # https://github.com/metaborg/strategoxt/
-spoofax3                        = "0.8.0"                   # https://github.com/metaborg/spoofax-pie
+spoofax3                        = "0.22.1"                  # https://github.com/metaborg/spoofax-pie
 spoofax2                        = "2.6.0-SNAPSHOT"          # https://spoofax.dev/ (https://github.com/metaborg/spoofax-releng)
 
 # Kotlin
@@ -138,11 +138,90 @@ metaborg-pie-lang-runtime-java  = { module = "org.metaborg:pie.lang.runtime.java
 metaborg-pie-lang-runtime-kotlin= { module = "org.metaborg:pie.lang.runtime.kotlin",                        version.ref = "metaborg-pie" }
 metaborg-pie-lang-test          = { module = "org.metaborg:pie.lang.test",                                  version.ref = "metaborg-pie" }
 
-# Spoofax 3
-spoofax3-lwb-compiler           = { module = "org.metaborg:spoofax.lwb.compiler",                           version.ref = "spoofax3" }
-spoofax3-lwb-compiler-dagger    = { module = "org.metaborg:spoofax.lwb.compiler.dagger",                    version.ref = "spoofax3" }
-spoofax3-lwb-compiler-gradle    = { module = "org.metaborg:spoofax.lwb.compiler.gradle",                    version.ref = "spoofax3" }
-spoofax3-lwb-dynamicloading     = { module = "org.metaborg:spoofax.lwb.dynamicloading",                     version.ref = "spoofax3" }
+# Spoofax 3/PIE
+spoofax3-spoofax-common                     = { module = "org.metaborg:spoofax.common",                     version.ref = "spoofax3" }
+spoofax3-aterm-common                       = { module = "org.metaborg:aterm.common",                       version.ref = "spoofax3" }
+spoofax3-jsglr-common                       = { module = "org.metaborg:jsglr.common",                       version.ref = "spoofax3" }
+spoofax3-jsglr-pie                          = { module = "org.metaborg:jsglr.pie",                          version.ref = "spoofax3" }
+spoofax3-jsglr1-common                      = { module = "org.metaborg:jsglr1.common",                      version.ref = "spoofax3" }
+spoofax3-jsglr2-common                      = { module = "org.metaborg:jsglr2.common",                      version.ref = "spoofax3" }
+spoofax3-esv-common                         = { module = "org.metaborg:esv.common",                         version.ref = "spoofax3" }
+spoofax3-stratego-common                    = { module = "org.metaborg:stratego.common",                    version.ref = "spoofax3" }
+spoofax3-stratego-pie                       = { module = "org.metaborg:stratego.pie",                       version.ref = "spoofax3" }
+spoofax3-constraint-common                  = { module = "org.metaborg:constraint.common",                  version.ref = "spoofax3" }
+spoofax3-constraint-pie                     = { module = "org.metaborg:constraint.pie",                     version.ref = "spoofax3" }
+spoofax3-nabl2-common                       = { module = "org.metaborg:nabl2.common",                       version.ref = "spoofax3" }
+spoofax3-statix-codecompletion              = { module = "org.metaborg:statix.codecompletion",              version.ref = "spoofax3" }
+spoofax3-statix-codecompletion-pie          = { module = "org.metaborg:statix.codecompletion.pie",          version.ref = "spoofax3" }
+spoofax3-statix-common                      = { module = "org.metaborg:statix.common",                      version.ref = "spoofax3" }
+spoofax3-statix-pie                         = { module = "org.metaborg:statix.pie",                         version.ref = "spoofax3" }
+spoofax3-statix-multilang                   = { module = "org.metaborg:statix.multilang",                   version.ref = "spoofax3" }
+spoofax3-statix-multilang-eclipse           = { module = "org.metaborg:statix.multilang.eclipse",           version.ref = "spoofax3" }
+spoofax3-spt-api                            = { module = "org.metaborg:spt.api",                            version.ref = "spoofax3" }
+spoofax3-tego-runtime                       = { module = "org.metaborg:tego.runtime",                       version.ref = "spoofax3" }
+spoofax3-spoofax2-common                    = { module = "org.metaborg:spoofax2.common",                    version.ref = "spoofax3" }
+spoofax3-tooling-eclipsebundle              = { module = "org.metaborg:tooling.eclipsebundle",              version.ref = "spoofax3" }
+spoofax3-transform-pie                      = { module = "org.metaborg:transform.pie",                      version.ref = "spoofax3" }
+spoofax3-spoofax-core                       = { module = "org.metaborg:spoofax.core",                       version.ref = "spoofax3" }
+spoofax3-spoofax-resource                   = { module = "org.metaborg:spoofax.resource",                   version.ref = "spoofax3" }
+spoofax3-spoofax-test                       = { module = "org.metaborg:spoofax.test",                       version.ref = "spoofax3" }
+spoofax3-spoofax-cli                        = { module = "org.metaborg:spoofax.cli",                        version.ref = "spoofax3" }
+spoofax3-spoofax-intellij                   = { module = "org.metaborg:spoofax.intellij",                   version.ref = "spoofax3" }
+spoofax3-spoofax-eclipse                    = { module = "org.metaborg:spoofax.eclipse",                    version.ref = "spoofax3" }
+spoofax3-spoofax-compiler                   = { module = "org.metaborg:spoofax.compiler",                   version.ref = "spoofax3" }
+spoofax3-spoofax-compiler-spoofax2          = { module = "org.metaborg:spoofax.compiler.spoofax2",          version.ref = "spoofax3" }
+spoofax3-spoofax-compiler-spoofax2-dagger   = { module = "org.metaborg:spoofax.compiler.spoofax2.dagger",   version.ref = "spoofax3" }
+spoofax3-spoofax-compiler-interfaces        = { module = "org.metaborg:spoofax.compiler.interfaces",        version.ref = "spoofax3" }
+spoofax3-spoofax-compiler-gradle            = { module = "org.metaborg:spoofax.compiler.gradle",            version.ref = "spoofax3" }
+spoofax3-spoofax-compiler-gradle-spoofax2   = { module = "org.metaborg:spoofax.compiler.gradle.spoofax2",   version.ref = "spoofax3" }
+spoofax3-spoofax-compiler-eclipsebundle     = { module = "org.metaborg:spoofax.compiler.eclipsebundle",     version.ref = "spoofax3" }
+spoofax3-spoofax-lwb-compiler               = { module = "org.metaborg:spoofax.lwb.compiler",               version.ref = "spoofax3" }
+spoofax3-spoofax-lwb-compiler-gradle        = { module = "org.metaborg:spoofax.lwb.compiler.gradle",        version.ref = "spoofax3" }
+spoofax3-spoofax-lwb-dynamicloading         = { module = "org.metaborg:spoofax.lwb.dynamicloading",         version.ref = "spoofax3" }
+spoofax3-cfg                                = { module = "org.metaborg:cfg",                                version.ref = "spoofax3" }
+#spoofax3-cfg-cli                            = { module = "org.metaborg:cfg.cli",                            version.ref = "spoofax3" } # Not published
+#spoofax3-cfg-eclipse                        = { module = "org.metaborg:cfg.eclipse",                        version.ref = "spoofax3" } # Not published
+#spoofax3-cfg-intellij                       = { module = "org.metaborg:cfg.intellij",                       version.ref = "spoofax3" } # Not published
+spoofax3-cfg-spoofax2                       = { module = "org.metaborg:cfg.spoofax2",                       version.ref = "spoofax3" }
+spoofax3-dynamix                            = { module = "org.metaborg:dynamix",                            version.ref = "spoofax3" }
+#spoofax3-dynamix-cli                        = { module = "org.metaborg:dynamix.cli",                        version.ref = "spoofax3" } # Not published
+#spoofax3-dynamix-eclipse                    = { module = "org.metaborg:dynamix.eclipse",                    version.ref = "spoofax3" } # Not published
+#spoofax3-dynamix-intellij                   = { module = "org.metaborg:dynamix.intellij",                   version.ref = "spoofax3" } # Not published
+spoofax3-dynamix-spoofax2                   = { module = "org.metaborg:dynamix.spoofax2",                   version.ref = "spoofax3" }
+spoofax3-sdf3extdynamix                     = { module = "org.metaborg:sdf3_ext_dynamix",                   version.ref = "spoofax3" }
+#spoofax3-sdf3extdynamix-eclipse             = { module = "org.metaborg:sdf3_ext_dynamix.eclipse",           version.ref = "spoofax3" } # Not published
+spoofax3-sdf3extdynamix-spoofax2            = { module = "org.metaborg:sdf3_ext_dynamix.spoofax2",          version.ref = "spoofax3" }
+spoofax3-sdf3                               = { module = "org.metaborg:sdf3",                               version.ref = "spoofax3" }
+#spoofax3-sdf3-cli                           = { module = "org.metaborg:sdf3.cli",                           version.ref = "spoofax3" } # Not published
+#spoofax3-sdf3-eclipse                       = { module = "org.metaborg:sdf3.eclipse",                       version.ref = "spoofax3" } # Not published
+#spoofax3-sdf3-intellij                      = { module = "org.metaborg:sdf3.intellij",                      version.ref = "spoofax3" } # Not published
+spoofax3-stratego                           = { module = "org.metaborg:stratego",                           version.ref = "spoofax3" }
+#spoofax3-stratego-cli                       = { module = "org.metaborg:stratego.cli",                       version.ref = "spoofax3" } # Not published
+#spoofax3-stratego-eclipse                   = { module = "org.metaborg:stratego.eclipse",                   version.ref = "spoofax3" } # Not published
+#spoofax3-stratego-intellij                  = { module = "org.metaborg:stratego.intellij",                  version.ref = "spoofax3" } # Not published
+spoofax3-esv                                = { module = "org.metaborg:esv",                                version.ref = "spoofax3" }
+#spoofax3-esv-cli                            = { module = "org.metaborg:esv.cli",                            version.ref = "spoofax3" } # Not published
+#spoofax3-esv-eclipse                        = { module = "org.metaborg:esv.eclipse",                        version.ref = "spoofax3" } # Not published
+#spoofax3-esv-intellij                       = { module = "org.metaborg:esv.intellij",                       version.ref = "spoofax3" } # Not published
+spoofax3-statix                             = { module = "org.metaborg:statix",                             version.ref = "spoofax3" }
+#spoofax3-statix-cli                         = { module = "org.metaborg:statix.cli",                         version.ref = "spoofax3" } # Not published
+#spoofax3-statix-eclipse                     = { module = "org.metaborg:statix.eclipse",                     version.ref = "spoofax3" } # Not published
+#spoofax3-statix-intellij                    = { module = "org.metaborg:statix.intellij",                    version.ref = "spoofax3" } # Not published
+spoofax3-sdf3extstatix                      = { module = "org.metaborg:sdf3_ext_statix",                    version.ref = "spoofax3" }
+#spoofax3-sdf3extstatix-eclipse              = { module = "org.metaborg:sdf3_ext_statix.eclipse",            version.ref = "spoofax3" } # Not published
+spoofax3-spt                                = { module = "org.metaborg:spt",                                version.ref = "spoofax3" }
+spoofax3-spt-dynamicloading                 = { module = "org.metaborg:spt.dynamicloading",                 version.ref = "spoofax3" }
+#spoofax3-spt-cli                            = { module = "org.metaborg:spt.cli",                            version.ref = "spoofax3" } # Not published
+#spoofax3-spt-eclipse                        = { module = "org.metaborg:spt.eclipse",                        version.ref = "spoofax3" } # Not published
+#spoofax3-spt-intellij                       = { module = "org.metaborg:spt.intellij",                       version.ref = "spoofax3" } # Not published
+spoofax3-libspoofax2                        = { module = "org.metaborg:libspoofax2",                        version.ref = "spoofax3" }
+#spoofax3-libspoofax2-eclipse                = { module = "org.metaborg:libspoofax2.eclipse",                version.ref = "spoofax3" } # Not published
+spoofax3-libstatix                          = { module = "org.metaborg:libstatix",                          version.ref = "spoofax3" }
+#spoofax3-libstatix-eclipse                  = { module = "org.metaborg:libstatix.eclipse",                  version.ref = "spoofax3" } # Not published
+spoofax3-strategolib                        = { module = "org.metaborg:strategolib",                        version.ref = "spoofax3" }
+spoofax3-strategolib-eclipse                = { module = "org.metaborg:strategolib.eclipse",                version.ref = "spoofax3" }
+spoofax3-gpp                                = { module = "org.metaborg:gpp",                                version.ref = "spoofax3" }
+spoofax3-gpp-eclipse                        = { module = "org.metaborg:gpp.eclipse",                        version.ref = "spoofax3" }
 
 # Stratego XT
 strategoxt-strj                 = { module = "org.metaborg.devenv:org.strategoxt.strj",                     version.ref = "strategoxt" }
