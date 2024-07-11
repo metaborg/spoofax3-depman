@@ -16,8 +16,10 @@ metaborg-common                 = "0.11.0"                  # https://github.com
 metaborg-log                    = "0.5.5"                   # https://github.com/metaborg/log/
 metaborg-pie                    = "0.21.0"                  # https://github.com/metaborg/pie/
 strategoxt                      = "0.1.36"                  # https://github.com/metaborg/strategoxt/
-spoofax3                        = "0.22.1"                  # https://github.com/metaborg/spoofax-pie
+spoofax3                        = "0.22.1"                  # https://github.com/metaborg/spoofax-pie/
 spoofax2                        = "2.6.0-SNAPSHOT"          # https://spoofax.dev/ (https://github.com/metaborg/spoofax-releng)
+mb-exec                         = "0.1.36"                  # https://github.com/metaborg/mb-exec/
+mb-rep                          = "0.1.36"                  # https://github.com/metaborg/mb-rep/
 
 # Kotlin
 kotlinx-coroutines              = "1.8.1"                   # https://github.com/Kotlin/kotlinx.coroutines
@@ -228,13 +230,6 @@ strategoxt-strj                 = { module = "org.metaborg.devenv:org.strategoxt
 spoofax2-strategoxt             = { module = "org.metaborg:strategoxt-min-jar",                             version.ref = "spoofax2" }      # TODO: Should this be prefixed with strategoxt? Should this be built by the StrategoXT repo Gradle?
 
 # Spoofax 2
-spoofax2-metaborg-util          = { module = "org.metaborg:org.metaborg.util",                              version.ref = "spoofax2" }
-spoofax2-util-vfs2              = { module = "org.metaborg:util-vfs2",                                      version.ref = "spoofax2" }
-spoofax2-terms                  = { module = "org.metaborg:org.spoofax.terms",                              version.ref = "spoofax2" }
-spoofax2-interpreter-core       = { module = "org.metaborg:org.spoofax.interpreter.core",                   version.ref = "spoofax2" }
-spoofax2-interpreter-library-xml    = { module = "org.metaborg:org.spoofax.interpreter.library.xml",        version.ref = "spoofax2" }
-spoofax2-interpreter-library-java   = { module = "org.metaborg:org.spoofax.interpreter.library.java",       version.ref = "spoofax2" }
-spoofax2-interpreter-library-index  = { module = "org.metaborg:org.spoofax.interpreter.library.index",      version.ref = "spoofax2" }
 spoofax2-interpreter-library-jsglr  = { module = "org.metaborg:org.spoofax.interpreter.library.jsglr",      version.ref = "spoofax2" }
 spoofax2-core                   = { module = "org.metaborg:org.metaborg.spoofax.core",                      version.ref = "spoofax2" }
 spoofax2-meta-core              = { module = "org.metaborg:org.metaborg.spoofax.meta.core",                 version.ref = "spoofax2" }
@@ -256,6 +251,17 @@ spoofax2-flowspec-runtime       = { module = "org.metaborg:flowspec.runtime",   
 spoofax2-runtime-task           = { module = "org.metaborg:org.metaborg.runtime.task",                      version.ref = "spoofax2" }
 spoofax2-stratego-build         = { module = "org.metaborg:stratego.build",                                 version.ref = "spoofax2" }
 spoofax2-stratego-build-spoofax2    = { module = "org.metaborg:stratego.build.spoofax2",                    version.ref = "spoofax2" }
+
+# MB Exec
+spoofax2-metaborg-util              = { module = "org.metaborg.devenv:org.metaborg.util",                       version.ref = "mb-exec" }
+spoofax2-interpreter-core           = { module = "org.metaborg.devenv:org.spoofax.interpreter.core",            version.ref = "mb-exec" }
+spoofax2-interpreter-library-xml    = { module = "org.metaborg.devenv:org.spoofax.interpreter.library.xml",     version.ref = "mb-exec" }
+spoofax2-interpreter-library-java   = { module = "org.metaborg.devenv:org.spoofax.interpreter.library.java",    version.ref = "mb-exec" }
+spoofax2-util-vfs2                  = { module = "org.metaborg.devenv:util-vfs2",                               version.ref = "mb-exec" }
+
+# MB Rep
+spoofax2-terms                      = { module = "org.metaborg.devenv:org.spoofax.terms",                       version.ref = "mb-rep" }
+spoofax2-interpreter-library-index  = { module = "org.metaborg.devenv:org.spoofax.interpreter.library.index",   version.ref = "mb-rep" }
 
 # Spoofax Languages
 spoofax-lang-esv                = { module = "org.metaborg:org.metaborg.meta.lang.esv",                     version.ref = "spoofax2" }

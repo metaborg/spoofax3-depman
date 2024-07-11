@@ -134,14 +134,6 @@ dependencies {
     api(libs.spoofax2.strategoxt)
 
     // Spoofax 2
-    api(libs.spoofax2.metaborg.util)
-    api(libs.spoofax2.util.vfs2)
-    api(libs.spoofax2.terms)
-    api(libs.spoofax2.interpreter.core)
-    api(libs.spoofax2.interpreter.library.xml)
-    api(libs.spoofax2.interpreter.library.java)
-    api(libs.spoofax2.interpreter.library.index)
-    api(libs.spoofax2.interpreter.library.jsglr)
     api(libs.spoofax2.core)
     api(libs.spoofax2.meta.core)
     api(libs.spoofax2.spt.core)
@@ -162,6 +154,17 @@ dependencies {
     api(libs.spoofax2.runtime.task)
     api(libs.spoofax2.stratego.build)
     api(libs.spoofax2.stratego.build.spoofax2)
+
+    // MB Exec
+    api(libs.spoofax2.metaborg.util)
+    api(libs.spoofax2.interpreter.core)
+    api(libs.spoofax2.interpreter.library.xml)
+    api(libs.spoofax2.interpreter.library.java)
+//    api(libs.spoofax2.util.vfs2)                      // TODO: Not released yet
+
+    // MB Rep
+    api(libs.spoofax2.terms)
+    api(libs.spoofax2.interpreter.library.index)
 
     // Spoofax languages
     api(libs.spoofax.lang.esv)
