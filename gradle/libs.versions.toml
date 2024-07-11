@@ -15,6 +15,7 @@ metaborg-resource               = "0.14.1"                  # https://github.com
 metaborg-common                 = "0.11.0"                  # https://github.com/metaborg/common/
 metaborg-log                    = "0.5.5"                   # https://github.com/metaborg/log/
 metaborg-pie                    = "0.21.0"                  # https://github.com/metaborg/pie/
+strategoxt                      = "0.1.36"                  # https://github.com/metaborg/strategoxt/
 spoofax3                        = "0.8.0"                   # https://github.com/metaborg/spoofax-pie
 spoofax2                        = "2.6.0-SNAPSHOT"          # https://spoofax.dev/ (https://github.com/metaborg/spoofax-releng)
 
@@ -143,18 +144,26 @@ spoofax3-lwb-compiler-dagger    = { module = "org.metaborg:spoofax.lwb.compiler.
 spoofax3-lwb-compiler-gradle    = { module = "org.metaborg:spoofax.lwb.compiler.gradle",                    version.ref = "spoofax3" }
 spoofax3-lwb-dynamicloading     = { module = "org.metaborg:spoofax.lwb.dynamicloading",                     version.ref = "spoofax3" }
 
+# Stratego XT
+strategoxt-strj                 = { module = "org.metaborg.devenv:org.strategoxt.strj",                     version.ref = "strategoxt" }
+spoofax2-strategoxt             = { module = "org.metaborg:strategoxt-min-jar",                             version.ref = "spoofax2" }      # TODO: Should this be prefixed with strategoxt? Should this be built by the StrategoXT repo Gradle?
+
 # Spoofax 2
 spoofax2-metaborg-util          = { module = "org.metaborg:org.metaborg.util",                              version.ref = "spoofax2" }
 spoofax2-util-vfs2              = { module = "org.metaborg:util-vfs2",                                      version.ref = "spoofax2" }
 spoofax2-terms                  = { module = "org.metaborg:org.spoofax.terms",                              version.ref = "spoofax2" }
 spoofax2-interpreter-core       = { module = "org.metaborg:org.spoofax.interpreter.core",                   version.ref = "spoofax2" }
+spoofax2-interpreter-library-xml    = { module = "org.metaborg:org.spoofax.interpreter.library.xml",        version.ref = "spoofax2" }
+spoofax2-interpreter-library-java   = { module = "org.metaborg:org.spoofax.interpreter.library.java",       version.ref = "spoofax2" }
+spoofax2-interpreter-library-index  = { module = "org.metaborg:org.spoofax.interpreter.library.index",      version.ref = "spoofax2" }
+spoofax2-interpreter-library-jsglr  = { module = "org.metaborg:org.spoofax.interpreter.library.jsglr",      version.ref = "spoofax2" }
 spoofax2-core                   = { module = "org.metaborg:org.metaborg.spoofax.core",                      version.ref = "spoofax2" }
 spoofax2-meta-core              = { module = "org.metaborg:org.metaborg.spoofax.meta.core",                 version.ref = "spoofax2" }
 spoofax2-spt-core               = { module = "org.metaborg:org.metaborg.spt.core",                          version.ref = "spoofax2" }
 spoofax2-meta-lib-spoofax       = { module = "org.metaborg:meta.lib.spoofax",                               version.ref = "spoofax2" }
 spoofax2-meta-lib-analysis      = { module = "org.metaborg:org.metaborg.meta.lib.analysis",                 version.ref = "spoofax2" }
-spoofax2-strategoxt-strj        = { module = "org.metaborg:org.strategoxt.strj",                            version.ref = "spoofax2" }
 spoofax2-jsglr-shared           = { module = "org.metaborg:jsglr.shared",                                   version.ref = "spoofax2" }
+spoofax2-jsglr                  = { module = "org.metaborg:org.spoofax.jsglr",                              version.ref = "spoofax2" }
 spoofax2-jsglr2                 = { module = "org.metaborg:org.spoofax.jsglr2",                             version.ref = "spoofax2" }
 spoofax2-nabl2-terms            = { module = "org.metaborg:nabl2.terms",                                    version.ref = "spoofax2" }
 spoofax2-nabl2-solver           = { module = "org.metaborg:nabl2.solver",                                   version.ref = "spoofax2" }
@@ -164,12 +173,10 @@ spoofax2-sdf2parenthesize       = { module = "org.metaborg:sdf2parenthesize",   
 spoofax2-makepermissive         = { module = "org.metaborg:make-permissive",                                version.ref = "spoofax2" }
 spoofax2-parsetable             = { module = "org.metaborg:org.metaborg.parsetable",                        version.ref = "spoofax2" }
 spoofax2-renaming-java          = { module = "org.metaborg:renaming.java",                                  version.ref = "spoofax2" }
-spoofax2-interpreter-library-index  = { module = "org.metaborg:org.spoofax.interpreter.library.index",      version.ref = "spoofax2" }
 spoofax2-flowspec-runtime       = { module = "org.metaborg:flowspec.runtime",                               version.ref = "spoofax2" }
 spoofax2-runtime-task           = { module = "org.metaborg:org.metaborg.runtime.task",                      version.ref = "spoofax2" }
 spoofax2-stratego-build         = { module = "org.metaborg:stratego.build",                                 version.ref = "spoofax2" }
 spoofax2-stratego-build-spoofax2    = { module = "org.metaborg:stratego.build.spoofax2",                    version.ref = "spoofax2" }
-spoofax2-strategoxt             = { module = "org.metaborg:strategoxt-min-jar",                             version.ref = "spoofax2" }
 
 # Spoofax Languages
 spoofax-lang-esv                = { module = "org.metaborg:org.metaborg.meta.lang.esv",                     version.ref = "spoofax2" }

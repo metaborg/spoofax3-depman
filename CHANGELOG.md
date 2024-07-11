@@ -5,25 +5,29 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 
-## [0.4.0]- 2024-07-10
+## [0.4.1] - 2024-07-11
+- Add Spoofax 2 dependencies.
+
+
+## [0.4.0] - 2024-07-10
 - *Breaking*: Many Spoofax dependencies now have `metaborg` as the prefix instead of `spoofax3`.
 - *Breaking*: The platform is now named `metaborg.platform` instead of `spoofax3.platform`.
 - Add Spoofax 3 LWB, SLF4J, JMH dependencies.
 
 
-## [0.3.11]- 2024-07-09
+## [0.3.11] - 2024-07-09
 - Add PIE dependencies.
 
 
-## [0.3.10]- 2024-07-09
+## [0.3.10] - 2024-07-09
 - Add dependencies for PIE.
 
 
-## [0.3.9]- 2024-07-09
+## [0.3.9] - 2024-07-09
 - Provide version for platform dependency.
 
 
-## [0.3.8]- 2024-07-09
+## [0.3.8] - 2024-07-09
 - Add JimFS and JUnit Params dependencies.
 
 
