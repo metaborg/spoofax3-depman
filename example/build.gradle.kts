@@ -11,24 +11,24 @@ repositories {
 dependencies {
     implementation(platform(libs.metaborg.platform))
 
-    // Metaborg Resource
-    api(libs.metaborg.resource.api)
-    api(libs.metaborg.resource.dagger)
-
-    // Metaborg Common
+    // Metaborg Common (https://github.com/metaborg/common)
     api(libs.metaborg.common)
 
-    // Metaborg Log
+    // Metaborg Log (https://github.com/metaborg/log)
     api(libs.metaborg.log.api)
-    api(libs.metaborg.log.backend.slf4j)
     api(libs.metaborg.log.backend.logback)
+    api(libs.metaborg.log.backend.slf4j)
     api(libs.metaborg.log.dagger)
 
-    // Metaborg PIE
+    // Metaborg PIE (https://github.com/metaborg/pie)
     api(libs.metaborg.pie.api)
     api(libs.metaborg.pie.api.test)
     api(libs.metaborg.pie.dagger)
     api(libs.metaborg.pie.graph)
+//    api(libs.metaborg.pie.lang)                   // TODO: spoofax-language component
+    api(libs.metaborg.pie.lang.runtime.java)
+    api(libs.metaborg.pie.lang.runtime.kotlin)
+    api(libs.metaborg.pie.lang.test)
     api(libs.metaborg.pie.runtime)
     api(libs.metaborg.pie.runtime.test)
     api(libs.metaborg.pie.serde.fst)
@@ -39,145 +39,177 @@ dependencies {
     api(libs.metaborg.pie.task.java)
     api(libs.metaborg.pie.task.java.ecj)
     api(libs.metaborg.pie.taskdefs.guice)
-//    api(libs.spoofax3.pie.lang)       // TODO: spoofax-language component
-    api(libs.metaborg.pie.lang.runtime.java)
-    api(libs.metaborg.pie.lang.runtime.kotlin)
-    api(libs.metaborg.pie.lang.test)
+
+    // Metaborg Resource (https://github.com/metaborg/resource)
+    api(libs.metaborg.resource.api)
+    api(libs.metaborg.resource.dagger)
 
     // Spoofax 3/PIE
-    api(libs.spoofax3.spoofax.common)
     api(libs.spoofax3.aterm.common)
-    api(libs.spoofax3.jsglr.common)
-    api(libs.spoofax3.jsglr.pie)
-    api(libs.spoofax3.jsglr1.common)
-    api(libs.spoofax3.jsglr2.common)
-    api(libs.spoofax3.esv.common)
-    api(libs.spoofax3.stratego.common)
-    api(libs.spoofax3.stratego.pie)
-    api(libs.spoofax3.constraint.common)
-    api(libs.spoofax3.constraint.pie)
-    api(libs.spoofax3.nabl2.common)
-    api(libs.spoofax3.statix.codecompletion)
-    api(libs.spoofax3.statix.codecompletion.pie)
-    api(libs.spoofax3.statix.common)
-    api(libs.spoofax3.statix.pie)
-    api(libs.spoofax3.statix.multilang)
-//    api(libs.spoofax3.statix.multilang.eclipse)       // TODO: Needs org.eclipse.core.runtime
-    api(libs.spoofax3.spt.api)
-    api(libs.spoofax3.tego.runtime)
-    api(libs.spoofax3.spoofax2.common)
-//    api(libs.spoofax3.tooling.eclipsebundle)          // TODO: Needs org.eclipse.core.runtime
-    api(libs.spoofax3.transform.pie)
-    api(libs.spoofax3.spoofax.core)
-    api(libs.spoofax3.spoofax.resource)
-    api(libs.spoofax3.spoofax.test)
-    api(libs.spoofax3.spoofax.cli)
-    api(libs.spoofax3.spoofax.intellij)
-//    api(libs.spoofax3.spoofax.eclipse)                // TODO: Needs org.eclipse.core.runtime
-    api(libs.spoofax3.spoofax.compiler)
-    api(libs.spoofax3.spoofax.compiler.spoofax2)
-    api(libs.spoofax3.spoofax.compiler.spoofax2.dagger)
-    api(libs.spoofax3.spoofax.compiler.interfaces)
-    api(libs.spoofax3.spoofax.compiler.gradle)
-    api(libs.spoofax3.spoofax.compiler.gradle.spoofax2)
-//    api(libs.spoofax3.spoofax.compiler.eclipsebundle) // TODO: Needs org.eclipse.core.runtime
-    api(libs.spoofax3.spoofax.lwb.compiler)
-    api(libs.spoofax3.spoofax.lwb.compiler.gradle)
-    api(libs.spoofax3.spoofax.lwb.dynamicloading)
     api(libs.spoofax3.cfg)
 //    api(libs.spoofax3.cfg.cli)                        // Not released
 //    api(libs.spoofax3.cfg.eclipse)                    // Not released
 //    api(libs.spoofax3.cfg.intellij)                   // Not released
 //    api(libs.spoofax3.cfg.spoofax2)                   // TODO: spoofax-language component
+    api(libs.spoofax3.constraint.common)
+    api(libs.spoofax3.constraint.pie)
     api(libs.spoofax3.dynamix)
 //    api(libs.spoofax3.dynamix.cli)                    // Not released
 //    api(libs.spoofax3.dynamix.eclipse)                // Not released
 //    api(libs.spoofax3.dynamix.intellij)               // Not released
 //    api(libs.spoofax3.dynamix.spoofax2)               // TODO: spoofax-language component
-    api(libs.spoofax3.sdf3extdynamix)
-//    api(libs.spoofax3.sdf3extdynamix.eclipse)         // Not released
-//    api(libs.spoofax3.sdf3extdynamix.spoofax2)        // TODO: spoofax-language component
-    api(libs.spoofax3.sdf3)
-//    api(libs.spoofax3.sdf3.cli)                       // Not released
-//    api(libs.spoofax3.sdf3.eclipse)                   // Not released
-//    api(libs.spoofax3.sdf3.intellij)                  // Not released
-    api(libs.spoofax3.stratego)
-//    api(libs.spoofax3.stratego.cli)                   // Not released
-//    api(libs.spoofax3.stratego.eclipse)               // Not released
-//    api(libs.spoofax3.stratego.intellij)              // Not released
     api(libs.spoofax3.esv)
 //    api(libs.spoofax3.esv.cli)                        // Not released
+    api(libs.spoofax3.esv.common)
 //    api(libs.spoofax3.esv.eclipse)                    // Not released
 //    api(libs.spoofax3.esv.intellij)                   // Not released
-    api(libs.spoofax3.statix)
-//    api(libs.spoofax3.statix.cli)                     // Not released
-//    api(libs.spoofax3.statix.eclipse)                 // Not released
-//    api(libs.spoofax3.statix.intellij)                // Not released
-    api(libs.spoofax3.sdf3extstatix)
-//    api(libs.spoofax3.sdf3extstatix.eclipse)          // Not released
-    api(libs.spoofax3.spt)
-    api(libs.spoofax3.spt.dynamicloading)
-//    api(libs.spoofax3.spt.cli)                        // Not released
-//    api(libs.spoofax3.spt.eclipse)                    // Not released
-//    api(libs.spoofax3.spt.intellij)                   // Not released
+    api(libs.spoofax3.gpp)
+//    api(libs.spoofax3.gpp.eclipse)                    // TODO: Needs org.eclipse.core.runtime
+    api(libs.spoofax3.jsglr.common)
+    api(libs.spoofax3.jsglr.pie)
+    api(libs.spoofax3.jsglr1.common)
+    api(libs.spoofax3.jsglr2.common)
     api(libs.spoofax3.libspoofax2)
 //    api(libs.spoofax3.libspoofax2.eclipse)            // Not released
     api(libs.spoofax3.libstatix)
 //    api(libs.spoofax3.libstatix.eclipse)              // Not released
+    api(libs.spoofax3.nabl2.common)
+    api(libs.spoofax3.sdf3)
+//    api(libs.spoofax3.sdf3.cli)                       // Not released
+//    api(libs.spoofax3.sdf3.eclipse)                   // Not released
+//    api(libs.spoofax3.sdf3.intellij)                  // Not released
+    api(libs.spoofax3.sdf3.extdynamix)
+//    api(libs.spoofax3.sdf3.extdynamix.eclipse)         // Not released
+//    api(libs.spoofax3.sdf3.extdynamix.spoofax2)        // TODO: spoofax-language component
+    api(libs.spoofax3.sdf3.extstatix)
+//    api(libs.spoofax3.sdf3.extstatix.eclipse)          // Not released
+    api(libs.spoofax3.cli)
+    api(libs.spoofax3.spoofax.common)
+    api(libs.spoofax3.compiler)
+//    api(libs.spoofax3.compiler.eclipsebundle) // TODO: Needs org.eclipse.core.runtime
+    api(libs.spoofax3.compiler.gradle)
+    api(libs.spoofax3.compiler.gradle.spoofax2)
+    api(libs.spoofax3.compiler.interfaces)
+    api(libs.spoofax3.compiler.spoofax2)
+    api(libs.spoofax3.compiler.spoofax2.dagger)
+    api(libs.spoofax3.core)
+//    api(libs.spoofax3.eclipse)                // TODO: Needs org.eclipse.core.runtime
+    api(libs.spoofax3.intellij)
+    api(libs.spoofax3.lwb.compiler)
+    api(libs.spoofax3.lwb.compiler.gradle)
+    api(libs.spoofax3.lwb.dynamicloading)
+    api(libs.spoofax3.resource)
+    api(libs.spoofax3.test)
+    api(libs.spoofax3.spoofax2.common)
+    api(libs.spoofax3.spt)
+    api(libs.spoofax3.spt.api)
+//    api(libs.spoofax3.spt.cli)                        // Not released
+    api(libs.spoofax3.spt.dynamicloading)
+//    api(libs.spoofax3.spt.eclipse)                    // Not released
+//    api(libs.spoofax3.spt.intellij)                   // Not released
+    api(libs.spoofax3.statix)
+//    api(libs.spoofax3.statix.cli)                     // Not released
+    api(libs.spoofax3.statix.codecompletion)
+    api(libs.spoofax3.statix.codecompletion.pie)
+    api(libs.spoofax3.statix.common)
+//    api(libs.spoofax3.statix.eclipse)                 // Not released
+//    api(libs.spoofax3.statix.intellij)                // Not released
+    api(libs.spoofax3.statix.multilang)
+//    api(libs.spoofax3.statix.multilang.eclipse)       // TODO: Needs org.eclipse.core.runtime
+    api(libs.spoofax3.statix.pie)
+    api(libs.spoofax3.stratego)
+//    api(libs.spoofax3.stratego.cli)                   // Not released
+    api(libs.spoofax3.stratego.common)
+//    api(libs.spoofax3.stratego.eclipse)               // Not released
+//    api(libs.spoofax3.stratego.intellij)              // Not released
+    api(libs.spoofax3.stratego.pie)
     api(libs.spoofax3.strategolib)
 //    api(libs.spoofax3.strategolib.eclipse)            // TODO: Needs org.eclipse.core.runtime
-    api(libs.spoofax3.gpp)
-//    api(libs.spoofax3.gpp.eclipse)                    // TODO: Needs org.eclipse.core.runtime
+    api(libs.spoofax3.tego.runtime)
+//    api(libs.spoofax3.tooling.eclipsebundle)          // TODO: Needs org.eclipse.core.runtime
+    api(libs.spoofax3.transform.pie)
 
-    // Stratego XT
-    api(libs.strategoxt.strj)
-    api(libs.spoofax2.strategoxt)
 
-    // Spoofax 2
+
+    // ESV (https://github.com/metaborg/esv)
+//    api(libs.esv.lang)                                // TODO: spoofax-language component
+
+    // Flowspec (https://github.com/metaborg/flowspec)
+    api(libs.flowspec.runtime)
+
+    // JSGLR (https://github.com/metaborg/jsglr)
+    api(libs.interpreter.library.jsglr)
+    api(libs.jsglr)
+    api(libs.jsglr.shared)
+    api(libs.jsglr2)
+    api(libs.makepermissive)
+
+    // MB Exec (https://github.com/metaborg/mb-exec)
+    api(libs.interpreter.core)
+    api(libs.interpreter.library.java)
+    api(libs.interpreter.library.xml)
+    api(libs.metaborg.util)
+//    api(libs.util.vfs2)                      // TODO: Not released yet
+
+    // MB Rep (https://github.com/metaborg/mb-rep)
+    api(libs.interpreter.library.index)
+    api(libs.spoofax.terms)
+
+    // NaBL (https://github.com/metaborg/nabl)
+    api(libs.nabl.lang)
+    api(libs.nabl.praffrayi)
+    api(libs.nabl.renaming.java)
+    api(libs.nabl.scopegraph)
+//    api(libs.nabl2.lang)                              // TODO: spoofax-language component
+//    api(libs.nabl2.runtime)                           // TODO: spoofax-language component
+//    api(libs.nabl2.shared)                            // TODO: spoofax-language component
+    api(libs.nabl2.solver)
+    api(libs.nabl2.terms)
+    api(libs.statix.generator)
+//    api(libs.statix.lang)                             // TODO: spoofax-language component
+//    api(libs.statix.runtime)                          // TODO: spoofax-language component
+    api(libs.statix.solver)
+    api(libs.ts.lang)
+
+    // Runtime Libraries (https://github.com/metaborg/runtime-libraries)
+    api(libs.meta.lib.analysis)
+    api(libs.metaborg.runtime.task)
+
+    // SDF (https://github.com/metaborg/sdf)
+    api(libs.parsetable)
+    api(libs.sdf2parenthesize)
+    api(libs.sdf2table)
+//    api(libs.sdf3.extstatix)                          // TODO: spoofax-language component
+//    api(libs.sdf3.lang)                               // TODO: spoofax-language component
+
+    // Spoofax Core (https://github.com/metaborg/spoofax)
+    api(libs.metaborg.core)
+    api(libs.metaborg.core.test)
+    api(libs.metaborg.meta.core)
     api(libs.spoofax2.core)
     api(libs.spoofax2.meta.core)
-    api(libs.spoofax2.spt.core)
-    api(libs.spoofax2.meta.lib.spoofax)
-    api(libs.spoofax2.meta.lib.analysis)
-    api(libs.spoofax2.jsglr.shared)
-    api(libs.spoofax2.jsglr)
-    api(libs.spoofax2.jsglr2)
-    api(libs.spoofax2.nabl2.terms)
-    api(libs.spoofax2.nabl2.solver)
-    api(libs.spoofax2.statix.solver)
-    api(libs.spoofax2.sdf2table)
-    api(libs.spoofax2.sdf2parenthesize)
-    api(libs.spoofax2.makepermissive)
-    api(libs.spoofax2.parsetable)
-    api(libs.spoofax2.renaming.java)
-    api(libs.spoofax2.flowspec.runtime)
-    api(libs.spoofax2.runtime.task)
-    api(libs.spoofax2.stratego.build)
-    api(libs.spoofax2.stratego.build.spoofax2)
+//    api(libs.spoofax2.meta.lib.spoofax)               // TODO: spoofax-language component
+    api(libs.spoofax2.nativebundle)
 
-    // MB Exec
-    api(libs.spoofax2.metaborg.util)
-    api(libs.spoofax2.interpreter.core)
-    api(libs.spoofax2.interpreter.library.xml)
-    api(libs.spoofax2.interpreter.library.java)
-//    api(libs.spoofax2.util.vfs2)                      // TODO: Not released yet
+    // Spoofax Gradle (https://github.com/metaborg/spoofax-gradle)
+    api(libs.spoofax3.gradle)
 
-    // MB Rep
-    api(libs.spoofax2.terms)
-    api(libs.spoofax2.interpreter.library.index)
+    // SPT (https://github.com/metaborg/spt)
+    api(libs.mbt.core)
+    api(libs.spt.core)
+//    api(libs.spt.lang)                                // TODO: spoofax-language component
 
-    // Spoofax languages
-    api(libs.spoofax.lang.esv)
-    api(libs.spoofax.lang.sdf3)
-    api(libs.spoofax.lang.spt)
-    api(libs.spoofax.lang.nabl)
-    api(libs.spoofax.meta.nabl2.shared)
-    api(libs.spoofax.meta.nabl2.runtime)
-    api(libs.spoofax.lang.ts)
-    api(libs.spoofax.lang.statix)
-    api(libs.spoofax.meta.sdf3.ext.statix)
-    api(libs.spoofax.meta.statix.runtime)
-    api(libs.spoofax.lang.stratego2)
+    // Stratego (https://github.com/metaborg/stratego)
+    api(libs.stratego.build)
+    api(libs.stratego.build.spoofax2)
+//    api(libs.stratego.lang)                           // TODO: spoofax-language component
+//    api(libs.stratego2.lang)                          // TODO: spoofax-language component
+
+    // Stratego XT (https://github.com/metaborg/strategoxt)
+    api(libs.strategoxt.minjar)
+    api(libs.strategoxt.strj)
+
+    // ---- // ---- // ---- // ---- // ---- // ---- // ---- // ---- // ---- // ---- // ---- // ---- // ---- // ---- //
 
     // Kotlin
     api(libs.kotlinx.coroutines.core)

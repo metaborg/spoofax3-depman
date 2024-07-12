@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 
+## [0.5.0] - 2024-07-12
+- Add more Spoofax 2 dependencies.
+- *Breaking*: Many dependencies got renamed.
+
+
 ## [0.4.3] - 2024-07-11
 - Add MB Exec and MB Rep dependencies.
 
@@ -122,7 +127,8 @@ All notable changes to this project will be documented in this file.
 - Initial release.
 
 
-[Unreleased]: https://github.com/metaborg/spoofax3-depman/compare/release-0.4.3...HEAD
+[Unreleased]: https://github.com/metaborg/spoofax3-depman/compare/release-0.5.0...HEAD
+[0.5.0]: https://github.com/metaborg/spoofax3-depman/compare/release-0.4.3...release-0.5.0
 [0.4.3]: https://github.com/metaborg/spoofax3-depman/compare/release-0.4.2...release-0.4.3
 [0.4.2]: https://github.com/metaborg/spoofax3-depman/compare/release-0.4.1...release-0.4.2
 [0.4.1]: https://github.com/metaborg/spoofax3-depman/compare/release-0.4.0...release-0.4.1
