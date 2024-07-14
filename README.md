@@ -6,6 +6,9 @@
 
 This repository contains projects for managing Spoofax 3 dependencies.
 
+> [!WARNING]
+> This repository is no longer maintained, as it was merged into [metaborg-gradle](https://github.com/metaborg/metaborg-gradle).
+
 [![Documentation][documentation-button]][documentation]
 
 | Artifact                          | Latest Release                                                                |
