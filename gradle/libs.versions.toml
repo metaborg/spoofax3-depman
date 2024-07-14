@@ -51,8 +51,9 @@ maven                           = "3.6.0"                   # https://maven.apac
 bnd                             = "5.3.0"                   # https://bnd.bndtools.org/ (https://github.com/bndtools/bnd)
 # Gradle
 coronium                        = "0.4.0"                   # https://github.com/metaborg/coronium
-intellij                        = "1.0"                     # Keep at 1.0 for JVM 8 compatibility
+intellij                        = "1.4"                     #
 gradle                          = "5.6.4"                   # https://gradle.org/ (https://github.com/gradle/gradle)
+develocityAdapter               = "1.0.2"                   # https://github.com/gradle/develocity-agent-adapters
 # ECJ
 eclipse-jdt-core                = "3.25.0"                  # https://www.eclipse.org/jdt/core/
 eclipse-jdt-compiler-tool       = "1.2.1100"                # https://www.eclipse.org/jdt/
@@ -96,6 +97,7 @@ jmh                             = "1.26"                    # https://openjdk.ja
 [plugins]
 kotlin-jvm                                  = { id = "org.jetbrains.kotlin.jvm",                                        version.ref = "kotlin" }
 gitonium                                    = { id = "org.metaborg.gitonium",                                           version.ref = "gitonium" }
+coronium-bundle                             = { id = "org.metaborg.coronium.bundle",                                    version.ref = "coronium" }
 foojay-resolver-convention                  = { id = "org.gradle.toolchains.foojay-resolver-convention",                version.ref = "foojay" }
 metaborg-gradle-rootproject                 = { id = "org.metaborg.gradle.config.root-project",                         version.ref = "metaborg-gradle-config" }
 metaborg-gradle-subproject                  = { id = "org.metaborg.gradle.config.sub-project",                          version.ref = "metaborg-gradle-config" }
@@ -115,6 +117,8 @@ metaborg-convention-java                    = { id = "org.metaborg.convention.ja
 metaborg-convention-mavenpublish            = { id = "org.metaborg.convention.maven-publish",                           version.ref = "metaborg-gradle-convention" }
 metaborg-convention-rootproject             = { id = "org.metaborg.convention.root-project",                            version.ref = "metaborg-gradle-convention" }
 develocity                                  = { id = "org.gradle.develocity",                                           version.ref = "develocity" }
+bnd-builder                                 = { id = "biz.aQute.bnd.builder",                                           version.ref = "bnd" }
+intellij                                    = { id = "org.jetbrains.intellij",                                          version.ref = "intellij" }
 
 [libraries]
 # The below libraries ARE part of the Spoofax platform definition.
@@ -361,8 +365,9 @@ bnd-gradle                                  = { module = "biz.aQute.bnd:biz.aQut
 coronium                                    = { module = "org.metaborg:coronium",                                       version.ref = "coronium" }
 gradle-develocityPlugin                     = { module = "com.gradle:develocity-gradle-plugin",                         version.ref = "develocity" }
 gradle-foojayPlugin                         = { module = "org.gradle.toolchains:foojay-resolver",                       version.ref = "foojay" }
-gradle-intellijPlugin                       = { module = "org.jetbrains.intellij:org.jetbrains.intellij.gradle.plugin", version.ref = "intellij" }
+gradle-intellijPlugin                       = { module = "org.jetbrains.intellij:org.jetbrains.intellij.gradle.plugin", version = "1.0" } # Keep at 1.0 for JVM 8 compatibility
 gradle-tooling-api                          = { module = "org.gradle:gradle-tooling-api",                               version.ref = "gradle" }
+gradle-develocityAdapter                    = { module = "com.gradle:develocity-gradle-plugin-adapters",                version.ref = "develocityAdapter" }
 
 # ECJ
 eclipse-jdt-core                            = { module = "org.eclipse.jdt:org.eclipse.jdt.core",                        version.ref = "eclipse-jdt-core" }
